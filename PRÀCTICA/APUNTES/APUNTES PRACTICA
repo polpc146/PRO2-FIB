@@ -1,0 +1,70 @@
+TERMINAL DE CONTENEDORES DE CARGA = AREA DE ALMACENAJE + AREA DE ESPERA
+
+-> N hileras: AREA DE ALMACENAJE. vector de una matriz[pisos][plazas]
+-> M plazas: columnas de una hilera
+-> H pisos: filas de una hilera en inversa = v.size()-1-piso(en el que poner el contenedor)
+
+AREA DE ESPERA ilimitada
+
+->CONTENEDORES:
+    longitud de 1, 2 y 3 plazas
+
+->UBICACIONES:
+    terna de enteros (i,j,k)
+    i = hilera
+    j = plaza
+    k = piso
+    se defina un contenedor por su terna (i,j,k) con menor j
+    se defina un hueco por su terna (i,j,k) con menor j
+
+->ESPACIOS LIBRES:
+    validos = disponibles para poner un contedor
+    invalidos = estan por encima de un espacio libre valido
+    hueco = plazas consecutivas libres validas delimitadas a izquierda y derecha
+
+->SEGMENTOS:
+    ubicacion y longitud de la situacion en el area de almacenaje y huecos
+
+FUNCIONALIDADES DE LOS DATOS
+
+->MATRICULAS:
+    strings alfanumericas (siempre letreas mayusculas y empieza por una letra)
+    se asume que la matricula es siempre correcta
+
+->LONGITUDES:
+    se asume que la longitud de los contenedores siempre es correcta
+
+->TERMINAL:
+    se asume que siempre N>0, M>0 y H>0
+
+->UBICACIONES:
+    terna (i,j,k)
+    se asume siempre ubicaciones validas segun el convenio:
+        area de almacenaje = (0<=i<N), (0<=j<M) y (0<=k<H)
+        area de espera = (-1,0,0)
+        ubicacion virtual (no esta ni en el area de almacenaje ni en el area de espera) = (-1,-1,-1)
+
+PROGRAMA PRINCIPAL
+
+string comando = "";
+lee comando;
+while (comando != "fin") {
+    // comando == "crea_terminal N M H"
+    procesa comando;
+    lee comando;
+    while (comando != "fin" and comando != "crea_terminal") {
+        procesa comando;
+        lee comando;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

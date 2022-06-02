@@ -1,0 +1,262 @@
+\hypertarget{class_almacenaje}{}\section{Referencia de la Clase Almacenaje}
+\label{class_almacenaje}\index{Almacenaje@{Almacenaje}}
+
+
+Representa un area de almacenaje de una terminal de contenedores de carga.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_almacenaje_aac76140a19e358858ec775cae4d23037}{Almacenaje} ()
+\begin{DoxyCompactList}\small\item\em Creadora sin argumentos. \end{DoxyCompactList}\item 
+\hyperlink{class_almacenaje_a647530e3470da788413fe0288eeca339}{Almacenaje} (int N, int M)
+\begin{DoxyCompactList}\small\item\em Creadora con atributos. \end{DoxyCompactList}\item 
+\hyperlink{class_almacenaje_af76b03e29489309e937d5a3b73bd77a4}{Almacenaje} (const \hyperlink{class_almacenaje}{Almacenaje} \&a)
+\begin{DoxyCompactList}\small\item\em Creadora de copia. \end{DoxyCompactList}\item 
+\hyperlink{class_almacenaje_a81867a2596bd5b0d654803fc34d8bc9a}{$\sim$\+Almacenaje} ()
+\begin{DoxyCompactList}\small\item\em Destructora. \end{DoxyCompactList}\item 
+void \hyperlink{class_almacenaje_aa4a16321fcfba32873521b9af6c8b73a}{retirar\+\_\+contenedor} (const string \&m)
+\begin{DoxyCompactList}\small\item\em Retira un \hyperlink{class_contenedor}{Contenedor} del area de almacenaje. \end{DoxyCompactList}\item 
+void \hyperlink{class_almacenaje_af91b0be022140b41af913728dd045e35}{actualizar\+\_\+huecos} (const vector$<$ \hyperlink{class_segmento}{Segmento} $>$ \&vseg, const vector$<$ \hyperlink{class_segmento}{Segmento} $>$ \&velem)
+\begin{DoxyCompactList}\small\item\em Actualiza los huecos del area de almacenaje. \end{DoxyCompactList}\item 
+\hyperlink{class_segmento}{Segmento} \hyperlink{class_almacenaje_afe08e4bca255d4baf3750019622e6cb2}{donde} (const string \&m) const
+\begin{DoxyCompactList}\small\item\em Consultora del \hyperlink{class_segmento}{Segmento} de una matrícula. \end{DoxyCompactList}\item 
+int \hyperlink{class_almacenaje_a745cf4e181058d391aed220843d6cede}{longitud} (const string \&m) const
+\begin{DoxyCompactList}\small\item\em Consultora de longitud. \end{DoxyCompactList}\item 
+string \hyperlink{class_almacenaje_a57347af1a15e11fa1e2a71621f867c0f}{matricula} (const \hyperlink{class_ubicacion}{Ubicacion} \&u) const
+\begin{DoxyCompactList}\small\item\em Consultora de una matrícula según su \hyperlink{class_ubicacion}{Ubicacion}. \end{DoxyCompactList}\item 
+\hyperlink{class_ubicacion}{Ubicacion} \hyperlink{class_almacenaje_a8a62209a8e83a59eb900913c3dc5f377}{hueco\+\_\+mas\+\_\+adecuado} (const \hyperlink{class_contenedor}{Contenedor} \&c)
+\begin{DoxyCompactList}\small\item\em Encuentra el hueco más adecuado según la estrategia B\+E\+S\+T\+\_\+\+F\+IT para insertar un \hyperlink{class_contenedor}{Contenedor}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_almacenaje_aa846d1cf215bd139527d2607d4cee833}{existe\+\_\+contenedor} (const string \&m) const
+\begin{DoxyCompactList}\small\item\em Consultora de la existencia del \hyperlink{class_contenedor}{Contenedor} con matricula {\itshape m} en el area de almacenaje. \end{DoxyCompactList}\item 
+void \hyperlink{class_almacenaje_a5de7fa3a41e402feecac670c226a058f}{escribir\+\_\+\+Contenedores\+Almacenaje} () const
+\begin{DoxyCompactList}\small\item\em Operación de escritura de los contenedores del area de almacenaje. \end{DoxyCompactList}\item 
+void \hyperlink{class_almacenaje_a29e009f94265ea34b860f0918d3e1992}{escribir\+\_\+\+Huecos} () const
+\begin{DoxyCompactList}\small\item\em Operación de escritura de los huecos del area de almacenaje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un area de almacenaje de una terminal de contenedores de carga. 
+
+Definición en la línea 25 del archivo Area\+De\+Almacenaje.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_almacenaje_aac76140a19e358858ec775cae4d23037}\label{class_almacenaje_aac76140a19e358858ec775cae4d23037}} 
+\index{Almacenaje@{Almacenaje}!Almacenaje@{Almacenaje}}
+\index{Almacenaje@{Almacenaje}!Almacenaje@{Almacenaje}}
+\subsubsection{\texorpdfstring{Almacenaje()}{Almacenaje()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Almacenaje\+::\+Almacenaje (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora sin argumentos. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un area de almacenaje vacío 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_almacenaje_a647530e3470da788413fe0288eeca339}\label{class_almacenaje_a647530e3470da788413fe0288eeca339}} 
+\index{Almacenaje@{Almacenaje}!Almacenaje@{Almacenaje}}
+\index{Almacenaje@{Almacenaje}!Almacenaje@{Almacenaje}}
+\subsubsection{\texorpdfstring{Almacenaje()}{Almacenaje()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Almacenaje\+::\+Almacenaje (\begin{DoxyParamCaption}\item[{int}]{N,  }\item[{int}]{M }\end{DoxyParamCaption})}
+
+
+
+Creadora con atributos. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un area de almacenaje vacío con un conjunto de los primeros huecos inicializado 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_almacenaje_af76b03e29489309e937d5a3b73bd77a4}\label{class_almacenaje_af76b03e29489309e937d5a3b73bd77a4}} 
+\index{Almacenaje@{Almacenaje}!Almacenaje@{Almacenaje}}
+\index{Almacenaje@{Almacenaje}!Almacenaje@{Almacenaje}}
+\subsubsection{\texorpdfstring{Almacenaje()}{Almacenaje()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Almacenaje\+::\+Almacenaje (\begin{DoxyParamCaption}\item[{const \hyperlink{class_almacenaje}{Almacenaje} \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Creadora de copia. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un area de almacenaje con los mismos atributos que {\itshape a} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_almacenaje_a81867a2596bd5b0d654803fc34d8bc9a}\label{class_almacenaje_a81867a2596bd5b0d654803fc34d8bc9a}} 
+\index{Almacenaje@{Almacenaje}!````~Almacenaje@{$\sim$\+Almacenaje}}
+\index{````~Almacenaje@{$\sim$\+Almacenaje}!Almacenaje@{Almacenaje}}
+\subsubsection{\texorpdfstring{$\sim$\+Almacenaje()}{~Almacenaje()}}
+{\footnotesize\ttfamily Almacenaje\+::$\sim$\+Almacenaje (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructora. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Destruye un objeto \hyperlink{class_almacenaje}{Almacenaje} 
+\end{DoxyPostcond}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_almacenaje_aa4a16321fcfba32873521b9af6c8b73a}\label{class_almacenaje_aa4a16321fcfba32873521b9af6c8b73a}} 
+\index{Almacenaje@{Almacenaje}!retirar\+\_\+contenedor@{retirar\+\_\+contenedor}}
+\index{retirar\+\_\+contenedor@{retirar\+\_\+contenedor}!Almacenaje@{Almacenaje}}
+\subsubsection{\texorpdfstring{retirar\+\_\+contenedor()}{retirar\_contenedor()}}
+{\footnotesize\ttfamily void Almacenaje\+::retirar\+\_\+contenedor (\begin{DoxyParamCaption}\item[{const string \&}]{m }\end{DoxyParamCaption})}
+
+
+
+Retira un \hyperlink{class_contenedor}{Contenedor} del area de almacenaje. 
+
+\begin{DoxyPrecond}{Precondición}
+Existe el \hyperlink{class_contenedor}{Contenedor} con matrícula {\itshape m} en el area de almacenaje 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha retirado el \hyperlink{class_contenedor}{Contenedor} con matrícula {\itshape m} del area de almacenaje 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_almacenaje_af91b0be022140b41af913728dd045e35}\label{class_almacenaje_af91b0be022140b41af913728dd045e35}} 
+\index{Almacenaje@{Almacenaje}!actualizar\+\_\+huecos@{actualizar\+\_\+huecos}}
+\index{actualizar\+\_\+huecos@{actualizar\+\_\+huecos}!Almacenaje@{Almacenaje}}
+\subsubsection{\texorpdfstring{actualizar\+\_\+huecos()}{actualizar\_huecos()}}
+{\footnotesize\ttfamily void Almacenaje\+::actualizar\+\_\+huecos (\begin{DoxyParamCaption}\item[{const vector$<$ \hyperlink{class_segmento}{Segmento} $>$ \&}]{vseg,  }\item[{const vector$<$ \hyperlink{class_segmento}{Segmento} $>$ \&}]{velem }\end{DoxyParamCaption})}
+
+
+
+Actualiza los huecos del area de almacenaje. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape /\+Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Añade los elementos de {\itshape vseg} y elemina los de {\itshape velem} de Huecos 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_almacenaje_afe08e4bca255d4baf3750019622e6cb2}\label{class_almacenaje_afe08e4bca255d4baf3750019622e6cb2}} 
+\index{Almacenaje@{Almacenaje}!donde@{donde}}
+\index{donde@{donde}!Almacenaje@{Almacenaje}}
+\subsubsection{\texorpdfstring{donde()}{donde()}}
+{\footnotesize\ttfamily \hyperlink{class_segmento}{Segmento} Almacenaje\+::donde (\begin{DoxyParamCaption}\item[{const string \&}]{m }\end{DoxyParamCaption}) const}
+
+
+
+Consultora del \hyperlink{class_segmento}{Segmento} de una matrícula. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la \hyperlink{class_ubicacion}{Ubicacion} $<${\itshape -\/1},{\itshape 0},{\itshape 0}$>$ y su longitud si está en el area de espera, es $<${\itshape -\/1},{\itshape -\/1},{\itshape -\/1}$>$ y longitud 0 si no está en el area de espera ni en el area de almacenaje, o es la \hyperlink{class_ubicacion}{Ubicacion} con menor número de plaza que ocupa el \hyperlink{class_contenedor}{Contenedor} con matrícula {\itshape m} y su longitud 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_almacenaje_a745cf4e181058d391aed220843d6cede}\label{class_almacenaje_a745cf4e181058d391aed220843d6cede}} 
+\index{Almacenaje@{Almacenaje}!longitud@{longitud}}
+\index{longitud@{longitud}!Almacenaje@{Almacenaje}}
+\subsubsection{\texorpdfstring{longitud()}{longitud()}}
+{\footnotesize\ttfamily int Almacenaje\+::longitud (\begin{DoxyParamCaption}\item[{const string \&}]{m }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de longitud. 
+
+\begin{DoxyPrecond}{Precondición}
+Existe un \hyperlink{class_contenedor}{Contenedor} con matrícula {\itshape m} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la longitud del \hyperlink{class_contenedor}{Contenedor} con matrícula {\itshape m} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_almacenaje_a57347af1a15e11fa1e2a71621f867c0f}\label{class_almacenaje_a57347af1a15e11fa1e2a71621f867c0f}} 
+\index{Almacenaje@{Almacenaje}!matricula@{matricula}}
+\index{matricula@{matricula}!Almacenaje@{Almacenaje}}
+\subsubsection{\texorpdfstring{matricula()}{matricula()}}
+{\footnotesize\ttfamily string Almacenaje\+::matricula (\begin{DoxyParamCaption}\item[{const \hyperlink{class_ubicacion}{Ubicacion} \&}]{u }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de una matrícula según su \hyperlink{class_ubicacion}{Ubicacion}. 
+
+\begin{DoxyPrecond}{Precondición}
+La \hyperlink{class_ubicacion}{Ubicacion} {\itshape u} pertenece al area de almacenaje y hay un contenedor en esa \hyperlink{class_ubicacion}{Ubicacion} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la matrícula del \hyperlink{class_contenedor}{Contenedor} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_almacenaje_a8a62209a8e83a59eb900913c3dc5f377}\label{class_almacenaje_a8a62209a8e83a59eb900913c3dc5f377}} 
+\index{Almacenaje@{Almacenaje}!hueco\+\_\+mas\+\_\+adecuado@{hueco\+\_\+mas\+\_\+adecuado}}
+\index{hueco\+\_\+mas\+\_\+adecuado@{hueco\+\_\+mas\+\_\+adecuado}!Almacenaje@{Almacenaje}}
+\subsubsection{\texorpdfstring{hueco\+\_\+mas\+\_\+adecuado()}{hueco\_mas\_adecuado()}}
+{\footnotesize\ttfamily \hyperlink{class_ubicacion}{Ubicacion} Almacenaje\+::hueco\+\_\+mas\+\_\+adecuado (\begin{DoxyParamCaption}\item[{const \hyperlink{class_contenedor}{Contenedor} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Encuentra el hueco más adecuado según la estrategia B\+E\+S\+T\+\_\+\+F\+IT para insertar un \hyperlink{class_contenedor}{Contenedor}. 
+
+\begin{DoxyPrecond}{Precondición}
+La lista de huecos {\itshape h} no está vacía y 1$<$=l$<$=3 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la \hyperlink{class_ubicacion}{Ubicacion} $<${\itshape -\/1},{\itshape 0},{\itshape 0}$>$ si no hay un hueco disponible en el area de almacenaje y, por lo tanto, se colocará el \hyperlink{class_contenedor}{Contenedor} en el area de espera; en caso contrario el resultado es la \hyperlink{class_ubicacion}{Ubicacion} dónde empieza el hueco con menor {\itshape longitud}, número menor de {\itshape hilera} y número menor de {\itshape plaza} posible en la que es posible insertar el contenedor 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_almacenaje_aa846d1cf215bd139527d2607d4cee833}\label{class_almacenaje_aa846d1cf215bd139527d2607d4cee833}} 
+\index{Almacenaje@{Almacenaje}!existe\+\_\+contenedor@{existe\+\_\+contenedor}}
+\index{existe\+\_\+contenedor@{existe\+\_\+contenedor}!Almacenaje@{Almacenaje}}
+\subsubsection{\texorpdfstring{existe\+\_\+contenedor()}{existe\_contenedor()}}
+{\footnotesize\ttfamily bool Almacenaje\+::existe\+\_\+contenedor (\begin{DoxyParamCaption}\item[{const string \&}]{m }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de la existencia del \hyperlink{class_contenedor}{Contenedor} con matricula {\itshape m} en el area de almacenaje. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado indica {\itshape Cierto} si existe un \hyperlink{class_contenedor}{Contenedor} con matrícula {\itshape m} en el area de almacenaje, en caso contrario indica {\itshape Falso} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_almacenaje_a5de7fa3a41e402feecac670c226a058f}\label{class_almacenaje_a5de7fa3a41e402feecac670c226a058f}} 
+\index{Almacenaje@{Almacenaje}!escribir\+\_\+\+Contenedores\+Almacenaje@{escribir\+\_\+\+Contenedores\+Almacenaje}}
+\index{escribir\+\_\+\+Contenedores\+Almacenaje@{escribir\+\_\+\+Contenedores\+Almacenaje}!Almacenaje@{Almacenaje}}
+\subsubsection{\texorpdfstring{escribir\+\_\+\+Contenedores\+Almacenaje()}{escribir\_ContenedoresAlmacenaje()}}
+{\footnotesize\ttfamily void Almacenaje\+::escribir\+\_\+\+Contenedores\+Almacenaje (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operación de escritura de los contenedores del area de almacenaje. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se escribe la matrícula del \hyperlink{class_contenedor}{Contenedor} seguida de su \hyperlink{class_ubicacion}{Ubicacion} y su longitud en orden ascendente de matrícula y una encima de otra 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_almacenaje_a29e009f94265ea34b860f0918d3e1992}\label{class_almacenaje_a29e009f94265ea34b860f0918d3e1992}} 
+\index{Almacenaje@{Almacenaje}!escribir\+\_\+\+Huecos@{escribir\+\_\+\+Huecos}}
+\index{escribir\+\_\+\+Huecos@{escribir\+\_\+\+Huecos}!Almacenaje@{Almacenaje}}
+\subsubsection{\texorpdfstring{escribir\+\_\+\+Huecos()}{escribir\_Huecos()}}
+{\footnotesize\ttfamily void Almacenaje\+::escribir\+\_\+\+Huecos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operación de escritura de los huecos del area de almacenaje. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se escriben los Segmentos de los huecos que hay en el area de almacenaje uno encima de otro 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_area_de_almacenaje_8hh}{Area\+De\+Almacenaje.\+hh}\end{DoxyCompactItemize}

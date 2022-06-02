@@ -1,0 +1,280 @@
+\hypertarget{class_segmento}{}\section{Referencia de la Clase Segmento}
+\label{class_segmento}\index{Segmento@{Segmento}}
+
+
+Representa un segment amb una ubicació i una longitud.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_segmento_af8ce1463824db8cd38084f4f75d3b192}{Segmento} ()
+\begin{DoxyCompactList}\small\item\em Creadora sense arguments. \end{DoxyCompactList}\item 
+\hyperlink{class_segmento_a325e58fb03daa6d14ceeb3c4759b042d}{Segmento} (const \hyperlink{class_ubicacion}{Ubicacion} \&u, int l)
+\begin{DoxyCompactList}\small\item\em Creadora amb atributs. \end{DoxyCompactList}\item 
+\hyperlink{class_segmento_a18576aa0c0d5d4200e23b84d760b5aa3}{Segmento} (const \hyperlink{class_segmento}{Segmento} \&s)
+\begin{DoxyCompactList}\small\item\em Creadora de còpia. \end{DoxyCompactList}\item 
+\hyperlink{class_segmento_a7a9ecb38532ea633aacdaa90be7c4769}{$\sim$\+Segmento} ()
+\begin{DoxyCompactList}\small\item\em Destructora. \end{DoxyCompactList}\item 
+\hyperlink{class_ubicacion}{Ubicacion} \hyperlink{class_segmento_aeb7bfd4dcac3a1a000a33582861e0d50}{ubic} () const
+\begin{DoxyCompactList}\small\item\em Consultora de la ubicació d\textquotesingle{}un segment. \end{DoxyCompactList}\item 
+int \hyperlink{class_segmento_a61c7347eb37045bef7655d3db24d7fd9}{longitud} () const
+\begin{DoxyCompactList}\small\item\em Consultora de la longitud d\textquotesingle{}un segment. \end{DoxyCompactList}\item 
+void \hyperlink{class_segmento_ac6f9e53987e915d2d0b6847aeb8e49ed}{print} () const
+\begin{DoxyCompactList}\small\item\em Operació d\textquotesingle{}escriptura del segment. \end{DoxyCompactList}\item 
+\hyperlink{class_segmento}{Segmento} \& \hyperlink{class_segmento_aee5b332a00494aa3963fe5a1496ab3f4}{operator=} (const \hyperlink{class_segmento}{Segmento} \&s)
+\begin{DoxyCompactList}\small\item\em Operador d\textquotesingle{}assignació \end{DoxyCompactList}\item 
+bool \hyperlink{class_segmento_a1f1e5977425950af37d4ca52761d381a}{operator==} (const \hyperlink{class_segmento}{Segmento} \&s) const
+\begin{DoxyCompactList}\small\item\em Operador d\textquotesingle{}igualtat. \end{DoxyCompactList}\item 
+bool \hyperlink{class_segmento_a77db9ed1b0a50b2cc1783c57a25f359a}{operator!=} (const \hyperlink{class_segmento}{Segmento} \&s) const
+\begin{DoxyCompactList}\small\item\em Operador de desigualtat. \end{DoxyCompactList}\item 
+bool \hyperlink{class_segmento_a780e43a2c06be2e098753cd5133f630b}{operator$<$} (const \hyperlink{class_segmento}{Segmento} \&s) const
+\begin{DoxyCompactList}\small\item\em Operador de menor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_segmento_acc183ac638eab6f484d17ced4f66cf8e}{operator$<$=} (const \hyperlink{class_segmento}{Segmento} \&s) const
+\begin{DoxyCompactList}\small\item\em Operador de menor o igual. \end{DoxyCompactList}\item 
+bool \hyperlink{class_segmento_a01c2aa376384c7a75ef22196db361d2e}{operator$>$} (const \hyperlink{class_segmento}{Segmento} \&s) const
+\begin{DoxyCompactList}\small\item\em Operador de major. \end{DoxyCompactList}\item 
+bool \hyperlink{class_segmento_a74e0ca47b9bf2316a0f55351529380f6}{operator$>$=} (const \hyperlink{class_segmento}{Segmento} \&s) const
+\begin{DoxyCompactList}\small\item\em Operador de major o igual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un segment amb una ubicació i una longitud. 
+
+Definición en la línea 15 del archivo Segmento.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_segmento_af8ce1463824db8cd38084f4f75d3b192}\label{class_segmento_af8ce1463824db8cd38084f4f75d3b192}} 
+\index{Segmento@{Segmento}!Segmento@{Segmento}}
+\index{Segmento@{Segmento}!Segmento@{Segmento}}
+\subsubsection{\texorpdfstring{Segmento()}{Segmento()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Segmento\+::\+Segmento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora sense arguments. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és un segment amb ubicació (-\/1,-\/1,-\/1) i longitud zero 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_segmento_a325e58fb03daa6d14ceeb3c4759b042d}\label{class_segmento_a325e58fb03daa6d14ceeb3c4759b042d}} 
+\index{Segmento@{Segmento}!Segmento@{Segmento}}
+\index{Segmento@{Segmento}!Segmento@{Segmento}}
+\subsubsection{\texorpdfstring{Segmento()}{Segmento()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Segmento\+::\+Segmento (\begin{DoxyParamCaption}\item[{const \hyperlink{class_ubicacion}{Ubicacion} \&}]{u,  }\item[{int}]{l }\end{DoxyParamCaption})}
+
+
+
+Creadora amb atributs. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape u} és una ubicació vàlida i {\itshape l} $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és un contenidor amb ubicació {\itshape u} i longitud {\itshape l} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_segmento_a18576aa0c0d5d4200e23b84d760b5aa3}\label{class_segmento_a18576aa0c0d5d4200e23b84d760b5aa3}} 
+\index{Segmento@{Segmento}!Segmento@{Segmento}}
+\index{Segmento@{Segmento}!Segmento@{Segmento}}
+\subsubsection{\texorpdfstring{Segmento()}{Segmento()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Segmento\+::\+Segmento (\begin{DoxyParamCaption}\item[{const \hyperlink{class_segmento}{Segmento} \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Creadora de còpia. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és un segment amb la mateixa ubicació i longitud que {\itshape s} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_segmento_a7a9ecb38532ea633aacdaa90be7c4769}\label{class_segmento_a7a9ecb38532ea633aacdaa90be7c4769}} 
+\index{Segmento@{Segmento}!````~Segmento@{$\sim$\+Segmento}}
+\index{````~Segmento@{$\sim$\+Segmento}!Segmento@{Segmento}}
+\subsubsection{\texorpdfstring{$\sim$\+Segmento()}{~Segmento()}}
+{\footnotesize\ttfamily Segmento\+::$\sim$\+Segmento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructora. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Destrueix un objecte \hyperlink{class_segmento}{Segmento} 
+\end{DoxyPostcond}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_segmento_aeb7bfd4dcac3a1a000a33582861e0d50}\label{class_segmento_aeb7bfd4dcac3a1a000a33582861e0d50}} 
+\index{Segmento@{Segmento}!ubic@{ubic}}
+\index{ubic@{ubic}!Segmento@{Segmento}}
+\subsubsection{\texorpdfstring{ubic()}{ubic()}}
+{\footnotesize\ttfamily \hyperlink{class_ubicacion}{Ubicacion} Segmento\+::ubic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de la ubicació d\textquotesingle{}un segment. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és la ubicació del segment p.\+i. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_segmento_a61c7347eb37045bef7655d3db24d7fd9}\label{class_segmento_a61c7347eb37045bef7655d3db24d7fd9}} 
+\index{Segmento@{Segmento}!longitud@{longitud}}
+\index{longitud@{longitud}!Segmento@{Segmento}}
+\subsubsection{\texorpdfstring{longitud()}{longitud()}}
+{\footnotesize\ttfamily int Segmento\+::longitud (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de la longitud d\textquotesingle{}un segment. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és la longitud del segment p.\+i. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_segmento_ac6f9e53987e915d2d0b6847aeb8e49ed}\label{class_segmento_ac6f9e53987e915d2d0b6847aeb8e49ed}} 
+\index{Segmento@{Segmento}!print@{print}}
+\index{print@{print}!Segmento@{Segmento}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Segmento\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operació d\textquotesingle{}escriptura del segment. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+S\textquotesingle{}ha escrit la ubicació i la longitud del p.\+i. pel canal estàndar de sortida en format ({\itshape u},{\itshape l}) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_segmento_aee5b332a00494aa3963fe5a1496ab3f4}\label{class_segmento_aee5b332a00494aa3963fe5a1496ab3f4}} 
+\index{Segmento@{Segmento}!operator=@{operator=}}
+\index{operator=@{operator=}!Segmento@{Segmento}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{class_segmento}{Segmento}\& Segmento\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_segmento}{Segmento} \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Operador d\textquotesingle{}assignació 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és un segment amb la mateixa ubicació i longitud que {\itshape s} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_segmento_a1f1e5977425950af37d4ca52761d381a}\label{class_segmento_a1f1e5977425950af37d4ca52761d381a}} 
+\index{Segmento@{Segmento}!operator==@{operator==}}
+\index{operator==@{operator==}!Segmento@{Segmento}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Segmento\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{class_segmento}{Segmento} \&}]{s }\end{DoxyParamCaption}) const}
+
+
+
+Operador d\textquotesingle{}igualtat. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. i {\itshape s} tenen la mateixa ubicació i longitud 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_segmento_a77db9ed1b0a50b2cc1783c57a25f359a}\label{class_segmento_a77db9ed1b0a50b2cc1783c57a25f359a}} 
+\index{Segmento@{Segmento}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Segmento@{Segmento}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Segmento\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_segmento}{Segmento} \&}]{s }\end{DoxyParamCaption}) const}
+
+
+
+Operador de desigualtat. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. i {\itshape s} tenen la ubicació o la longitud diferent 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_segmento_a780e43a2c06be2e098753cd5133f630b}\label{class_segmento_a780e43a2c06be2e098753cd5133f630b}} 
+\index{Segmento@{Segmento}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Segmento@{Segmento}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Segmento\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_segmento}{Segmento} \&}]{s }\end{DoxyParamCaption}) const}
+
+
+
+Operador de menor. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. és menor que {\itshape s} per longitud o en cas d\textquotesingle{}empat per ubicació 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_segmento_acc183ac638eab6f484d17ced4f66cf8e}\label{class_segmento_acc183ac638eab6f484d17ced4f66cf8e}} 
+\index{Segmento@{Segmento}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Segmento@{Segmento}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Segmento\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_segmento}{Segmento} \&}]{s }\end{DoxyParamCaption}) const}
+
+
+
+Operador de menor o igual. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. és menor o igual que {\itshape s} segons els operadors de menor i d\textquotesingle{}igualtat 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_segmento_a01c2aa376384c7a75ef22196db361d2e}\label{class_segmento_a01c2aa376384c7a75ef22196db361d2e}} 
+\index{Segmento@{Segmento}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Segmento@{Segmento}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Segmento\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_segmento}{Segmento} \&}]{s }\end{DoxyParamCaption}) const}
+
+
+
+Operador de major. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. és major que {\itshape s} segons els operadors de menor i d\textquotesingle{}igualtat 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_segmento_a74e0ca47b9bf2316a0f55351529380f6}\label{class_segmento_a74e0ca47b9bf2316a0f55351529380f6}} 
+\index{Segmento@{Segmento}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Segmento@{Segmento}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Segmento\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_segmento}{Segmento} \&}]{s }\end{DoxyParamCaption}) const}
+
+
+
+Operador de major o igual. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. és major o igual que {\itshape s} segons els operadors de menor i d\textquotesingle{}igualtat 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_segmento_8hh}{Segmento.\+hh}\end{DoxyCompactItemize}

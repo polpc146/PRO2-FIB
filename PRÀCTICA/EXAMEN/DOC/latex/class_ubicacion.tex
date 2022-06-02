@@ -1,0 +1,506 @@
+\hypertarget{class_ubicacion}{}\section{Referencia de la Clase Ubicacion}
+\label{class_ubicacion}\index{Ubicacion@{Ubicacion}}
+
+
+Representa una ubicació en una terminal amb 3 coordenades.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ubicacion_a9014ea9ce9297b951a07a668a5fb7cc4}{Ubicacion} ()
+\begin{DoxyCompactList}\small\item\em Creadora sense arguments. \end{DoxyCompactList}\item 
+\hyperlink{class_ubicacion_a423ae49933ff18f187e1f034d295f4c1}{Ubicacion} (int i, int j, int k)
+\begin{DoxyCompactList}\small\item\em Creadora amb atributs. \end{DoxyCompactList}\item 
+\hyperlink{class_ubicacion_abbd148f34df6cde35f0f3803c8a98660}{Ubicacion} (const \hyperlink{class_ubicacion}{Ubicacion} \&u)
+\begin{DoxyCompactList}\small\item\em Creadora de còpia. \end{DoxyCompactList}\item 
+\hyperlink{class_ubicacion_a90a99154b92c9c89053b752f775618d1}{$\sim$\+Ubicacion} ()
+\begin{DoxyCompactList}\small\item\em Destructora. \end{DoxyCompactList}\item 
+int \hyperlink{class_ubicacion_abf00d08075e75ac833de7357ebc6f521}{hilera} () const
+\begin{DoxyCompactList}\small\item\em Consultora de la fila d\textquotesingle{}una ubicació \end{DoxyCompactList}\item 
+int \hyperlink{class_ubicacion_abed323ffb2eace375e80bc395fdaeb39}{plaza} () const
+\begin{DoxyCompactList}\small\item\em Consultora de la plaça d\textquotesingle{}una ubicació \end{DoxyCompactList}\item 
+int \hyperlink{class_ubicacion_af6099f8de4dee993e4c9119e1f879070}{piso} () const
+\begin{DoxyCompactList}\small\item\em Consultora del pis d\textquotesingle{}una ubicació \end{DoxyCompactList}\item 
+void \hyperlink{class_ubicacion_a6b693a32d8bbd9afce30b11d19b68846}{print} () const
+\begin{DoxyCompactList}\small\item\em Operació d\textquotesingle{}escriptura de la ubicació \end{DoxyCompactList}\item 
+\hyperlink{class_ubicacion}{Ubicacion} \& \hyperlink{class_ubicacion_ac88191686dfc11998ec6688828b52b9f}{operator=} (const \hyperlink{class_ubicacion}{Ubicacion} \&u)
+\begin{DoxyCompactList}\small\item\em Operador d\textquotesingle{}assignació \end{DoxyCompactList}\item 
+bool \hyperlink{class_ubicacion_a4fd8b3d7d42695cc4852771e34ab63bc}{operator==} (const \hyperlink{class_ubicacion}{Ubicacion} \&u) const
+\begin{DoxyCompactList}\small\item\em Operador d\textquotesingle{}igualtat. \end{DoxyCompactList}\item 
+bool \hyperlink{class_ubicacion_a5caac27fa52a8e5fddd5ab50b0d56bd1}{operator!=} (const \hyperlink{class_ubicacion}{Ubicacion} \&u) const
+\begin{DoxyCompactList}\small\item\em Operador de desigualtat. \end{DoxyCompactList}\item 
+bool \hyperlink{class_ubicacion_a4d19b7ea907107a1c25677c3785a0a69}{operator$<$} (const \hyperlink{class_ubicacion}{Ubicacion} \&u) const
+\begin{DoxyCompactList}\small\item\em Operador de menor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_ubicacion_ac3b54c312d4e2e01c6bda1205b39ae3b}{operator$<$=} (const \hyperlink{class_ubicacion}{Ubicacion} \&u) const
+\begin{DoxyCompactList}\small\item\em Operador de menor o igual. \end{DoxyCompactList}\item 
+bool \hyperlink{class_ubicacion_abde3b350c4f55f59964fabbc17ed164f}{operator$>$} (const \hyperlink{class_ubicacion}{Ubicacion} \&u) const
+\begin{DoxyCompactList}\small\item\em Operador de major. \end{DoxyCompactList}\item 
+bool \hyperlink{class_ubicacion_a0ea3b04b8b0ef5a3482049d3ddf63f3b}{operator$>$=} (const \hyperlink{class_ubicacion}{Ubicacion} \&u) const
+\begin{DoxyCompactList}\small\item\em Operador de major o igual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}{x}
+\item 
+int \hyperlink{class_ubicacion_ab314f05b8da651aabb8a623467919a94}{y}
+\item 
+int \hyperlink{class_ubicacion_ad74770f35bf4b18d3959b78cd90b6eb0}{z}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa una ubicació en una terminal amb 3 coordenades. 
+
+Definición en la línea 13 del archivo Ubicacion.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_ubicacion_a9014ea9ce9297b951a07a668a5fb7cc4}\label{class_ubicacion_a9014ea9ce9297b951a07a668a5fb7cc4}} 
+\index{Ubicacion@{Ubicacion}!Ubicacion@{Ubicacion}}
+\index{Ubicacion@{Ubicacion}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{Ubicacion()}{Ubicacion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Ubicacion\+::\+Ubicacion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora sense arguments. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és una ubicació amb coordenades virtuals (-\/1,-\/1,-\/1) 
+\end{DoxyPostcond}
+
+
+Definición en la línea 7 del archivo Ubicacion.\+cc.
+
+
+\begin{DoxyCode}
+7                      \{
+8   \hyperlink{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}{x} = -1;
+9   \hyperlink{class_ubicacion_ab314f05b8da651aabb8a623467919a94}{y} = -1;
+10   \hyperlink{class_ubicacion_ad74770f35bf4b18d3959b78cd90b6eb0}{z} = -1;
+11 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ubicacion_a423ae49933ff18f187e1f034d295f4c1}\label{class_ubicacion_a423ae49933ff18f187e1f034d295f4c1}} 
+\index{Ubicacion@{Ubicacion}!Ubicacion@{Ubicacion}}
+\index{Ubicacion@{Ubicacion}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{Ubicacion()}{Ubicacion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Ubicacion\+::\+Ubicacion (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+Creadora amb atributs. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape i},{\itshape j},{\itshape k} són $>$= 0 o bé {\itshape i},{\itshape j},{\itshape k} són -\/1 o bé {\itshape i}=-\/1 i {\itshape j},{\itshape k} són 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és una ubicació ({\itshape i},{\itshape j},{\itshape k}) 
+\end{DoxyPostcond}
+
+
+Definición en la línea 13 del archivo Ubicacion.\+cc.
+
+
+\begin{DoxyCode}
+13                                         \{
+14 \textcolor{comment}{//Pre:  ((i >= 0) and (j >= 0) and (k >= 0)) or}
+15 \textcolor{comment}{//      ((i == -1) and (j == 0) and (k == 0)) or}
+16 \textcolor{comment}{//      ((i == -1) and (j == -1) and (k == -1))}
+17   \hyperlink{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}{x} = i;
+18   \hyperlink{class_ubicacion_ab314f05b8da651aabb8a623467919a94}{y} = j;
+19   \hyperlink{class_ubicacion_ad74770f35bf4b18d3959b78cd90b6eb0}{z} = k;
+20 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ubicacion_abbd148f34df6cde35f0f3803c8a98660}\label{class_ubicacion_abbd148f34df6cde35f0f3803c8a98660}} 
+\index{Ubicacion@{Ubicacion}!Ubicacion@{Ubicacion}}
+\index{Ubicacion@{Ubicacion}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{Ubicacion()}{Ubicacion()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Ubicacion\+::\+Ubicacion (\begin{DoxyParamCaption}\item[{const \hyperlink{class_ubicacion}{Ubicacion} \&}]{u }\end{DoxyParamCaption})}
+
+
+
+Creadora de còpia. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és una ubicació amb les mateixes coordenades que {\itshape u} 
+\end{DoxyPostcond}
+
+
+Definición en la línea 22 del archivo Ubicacion.\+cc.
+
+
+\begin{DoxyCode}
+22                                        \{
+23   \hyperlink{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}{x} = u.\hyperlink{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}{x};
+24   \hyperlink{class_ubicacion_ab314f05b8da651aabb8a623467919a94}{y} = u.\hyperlink{class_ubicacion_ab314f05b8da651aabb8a623467919a94}{y};
+25   \hyperlink{class_ubicacion_ad74770f35bf4b18d3959b78cd90b6eb0}{z} = u.\hyperlink{class_ubicacion_ad74770f35bf4b18d3959b78cd90b6eb0}{z};
+26 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ubicacion_a90a99154b92c9c89053b752f775618d1}\label{class_ubicacion_a90a99154b92c9c89053b752f775618d1}} 
+\index{Ubicacion@{Ubicacion}!````~Ubicacion@{$\sim$\+Ubicacion}}
+\index{````~Ubicacion@{$\sim$\+Ubicacion}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{$\sim$\+Ubicacion()}{~Ubicacion()}}
+{\footnotesize\ttfamily Ubicacion\+::$\sim$\+Ubicacion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructora. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Destrueix un objecte \hyperlink{class_ubicacion}{Ubicacion} 
+\end{DoxyPostcond}
+
+
+Definición en la línea 28 del archivo Ubicacion.\+cc.
+
+
+\begin{DoxyCode}
+28                       \{
+29 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_ubicacion_abf00d08075e75ac833de7357ebc6f521}\label{class_ubicacion_abf00d08075e75ac833de7357ebc6f521}} 
+\index{Ubicacion@{Ubicacion}!hilera@{hilera}}
+\index{hilera@{hilera}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{hilera()}{hilera()}}
+{\footnotesize\ttfamily int Ubicacion\+::hilera (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de la fila d\textquotesingle{}una ubicació 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és la primera coordenada de la ubicació p.\+i. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 31 del archivo Ubicacion.\+cc.
+
+
+\begin{DoxyCode}
+31                                 \{
+32   \textcolor{keywordflow}{return} \hyperlink{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}{x};
+33 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ubicacion_abed323ffb2eace375e80bc395fdaeb39}\label{class_ubicacion_abed323ffb2eace375e80bc395fdaeb39}} 
+\index{Ubicacion@{Ubicacion}!plaza@{plaza}}
+\index{plaza@{plaza}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{plaza()}{plaza()}}
+{\footnotesize\ttfamily int Ubicacion\+::plaza (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de la plaça d\textquotesingle{}una ubicació 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és la segona coordenada de la ubicació p.\+i. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 35 del archivo Ubicacion.\+cc.
+
+
+\begin{DoxyCode}
+35                                \{
+36   \textcolor{keywordflow}{return} \hyperlink{class_ubicacion_ab314f05b8da651aabb8a623467919a94}{y};
+37 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ubicacion_af6099f8de4dee993e4c9119e1f879070}\label{class_ubicacion_af6099f8de4dee993e4c9119e1f879070}} 
+\index{Ubicacion@{Ubicacion}!piso@{piso}}
+\index{piso@{piso}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{piso()}{piso()}}
+{\footnotesize\ttfamily int Ubicacion\+::piso (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora del pis d\textquotesingle{}una ubicació 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és la tercera coordenada de la ubicació p.\+i. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 39 del archivo Ubicacion.\+cc.
+
+
+\begin{DoxyCode}
+39                               \{
+40   \textcolor{keywordflow}{return} \hyperlink{class_ubicacion_ad74770f35bf4b18d3959b78cd90b6eb0}{z};
+41 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ubicacion_a6b693a32d8bbd9afce30b11d19b68846}\label{class_ubicacion_a6b693a32d8bbd9afce30b11d19b68846}} 
+\index{Ubicacion@{Ubicacion}!print@{print}}
+\index{print@{print}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Ubicacion\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operació d\textquotesingle{}escriptura de la ubicació 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+S\textquotesingle{}ha escrit la ubicació p.\+i. pel canal estàndar de sortida en format $<${\itshape x},{\itshape y},{\itshape z}$>$ 
+\end{DoxyPostcond}
+
+
+Definición en la línea 43 del archivo Ubicacion.\+cc.
+
+
+\begin{DoxyCode}
+43                             \{
+44   cout << \textcolor{stringliteral}{"<"} << \hyperlink{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}{x} << \textcolor{stringliteral}{","} << \hyperlink{class_ubicacion_ab314f05b8da651aabb8a623467919a94}{y} << \textcolor{stringliteral}{","} << \hyperlink{class_ubicacion_ad74770f35bf4b18d3959b78cd90b6eb0}{z} << \textcolor{stringliteral}{">"};
+45 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ubicacion_ac88191686dfc11998ec6688828b52b9f}\label{class_ubicacion_ac88191686dfc11998ec6688828b52b9f}} 
+\index{Ubicacion@{Ubicacion}!operator=@{operator=}}
+\index{operator=@{operator=}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{class_ubicacion}{Ubicacion} \& Ubicacion\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_ubicacion}{Ubicacion} \&}]{u }\end{DoxyParamCaption})}
+
+
+
+Operador d\textquotesingle{}assignació 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és una ubicació amb les mateixes coordenades que {\itshape u} 
+\end{DoxyPostcond}
+
+
+Definición en la línea 47 del archivo Ubicacion.\+cc.
+
+
+\begin{DoxyCode}
+47                                                   \{
+48   \textcolor{keywordflow}{if} (\textcolor{keyword}{this} != &u) \{
+49     \hyperlink{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}{x} = u.\hyperlink{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}{x};
+50     \hyperlink{class_ubicacion_ab314f05b8da651aabb8a623467919a94}{y} = u.\hyperlink{class_ubicacion_ab314f05b8da651aabb8a623467919a94}{y};
+51     \hyperlink{class_ubicacion_ad74770f35bf4b18d3959b78cd90b6eb0}{z} = u.\hyperlink{class_ubicacion_ad74770f35bf4b18d3959b78cd90b6eb0}{z};
+52   \}
+53   \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+54 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ubicacion_a4fd8b3d7d42695cc4852771e34ab63bc}\label{class_ubicacion_a4fd8b3d7d42695cc4852771e34ab63bc}} 
+\index{Ubicacion@{Ubicacion}!operator==@{operator==}}
+\index{operator==@{operator==}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Ubicacion\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{class_ubicacion}{Ubicacion} \&}]{u }\end{DoxyParamCaption}) const}
+
+
+
+Operador d\textquotesingle{}igualtat. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. i {\itshape u} tenen les mateixes coordenades 
+\end{DoxyPostcond}
+
+
+Definición en la línea 83 del archivo Ubicacion.\+cc.
+
+
+\begin{DoxyCode}
+83                                                    \{
+84   \textcolor{keywordflow}{return} ((\hyperlink{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}{x} == u.\hyperlink{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}{x}) and (\hyperlink{class_ubicacion_ab314f05b8da651aabb8a623467919a94}{y} == u.\hyperlink{class_ubicacion_ab314f05b8da651aabb8a623467919a94}{y}) and (\hyperlink{class_ubicacion_ad74770f35bf4b18d3959b78cd90b6eb0}{z} == u.\hyperlink{class_ubicacion_ad74770f35bf4b18d3959b78cd90b6eb0}{z}));
+85 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ubicacion_a5caac27fa52a8e5fddd5ab50b0d56bd1}\label{class_ubicacion_a5caac27fa52a8e5fddd5ab50b0d56bd1}} 
+\index{Ubicacion@{Ubicacion}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Ubicacion\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_ubicacion}{Ubicacion} \&}]{u }\end{DoxyParamCaption}) const}
+
+
+
+Operador de desigualtat. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. i {\itshape u} tenen alguna coordenada diferent 
+\end{DoxyPostcond}
+
+
+Definición en la línea 87 del archivo Ubicacion.\+cc.
+
+
+\begin{DoxyCode}
+87                                                    \{
+88   \textcolor{keywordflow}{return} not(*\textcolor{keyword}{this} == u);
+89 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ubicacion_a4d19b7ea907107a1c25677c3785a0a69}\label{class_ubicacion_a4d19b7ea907107a1c25677c3785a0a69}} 
+\index{Ubicacion@{Ubicacion}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Ubicacion\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_ubicacion}{Ubicacion} \&}]{u }\end{DoxyParamCaption}) const}
+
+
+
+Operador de menor. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. és menor que {\itshape u} segons la primera coordenada, en cas d\textquotesingle{}empat segons la segona, i en cas d\textquotesingle{}empat segons la tercera 
+\end{DoxyPostcond}
+
+
+Definición en la línea 57 del archivo Ubicacion.\+cc.
+
+
+\begin{DoxyCode}
+58 \{
+59   \textcolor{keywordflow}{return} ((\hyperlink{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}{x} < u.\hyperlink{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}{x}) or
+60           ((\hyperlink{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}{x} == u.\hyperlink{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}{x}) and (\hyperlink{class_ubicacion_ab314f05b8da651aabb8a623467919a94}{y} < u.\hyperlink{class_ubicacion_ab314f05b8da651aabb8a623467919a94}{y})) or
+61           ((\hyperlink{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}{x} == u.\hyperlink{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}{x}) and (\hyperlink{class_ubicacion_ab314f05b8da651aabb8a623467919a94}{y} == u.\hyperlink{class_ubicacion_ab314f05b8da651aabb8a623467919a94}{y}) and (\hyperlink{class_ubicacion_ad74770f35bf4b18d3959b78cd90b6eb0}{z} < u.\hyperlink{class_ubicacion_ad74770f35bf4b18d3959b78cd90b6eb0}{z})));
+62 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ubicacion_ac3b54c312d4e2e01c6bda1205b39ae3b}\label{class_ubicacion_ac3b54c312d4e2e01c6bda1205b39ae3b}} 
+\index{Ubicacion@{Ubicacion}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Ubicacion\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_ubicacion}{Ubicacion} \&}]{u }\end{DoxyParamCaption}) const}
+
+
+
+Operador de menor o igual. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. és menor o igual que {\itshape u} segons els operadors de menor i d\textquotesingle{}igualtat 
+\end{DoxyPostcond}
+
+
+Definición en la línea 91 del archivo Ubicacion.\+cc.
+
+
+\begin{DoxyCode}
+91                                                    \{
+92   \textcolor{keywordflow}{return} *\textcolor{keyword}{this} < u or u == *\textcolor{keyword}{this};
+93 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ubicacion_abde3b350c4f55f59964fabbc17ed164f}\label{class_ubicacion_abde3b350c4f55f59964fabbc17ed164f}} 
+\index{Ubicacion@{Ubicacion}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Ubicacion\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_ubicacion}{Ubicacion} \&}]{u }\end{DoxyParamCaption}) const}
+
+
+
+Operador de major. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. és major que {\itshape u} segons els operadors de menor i d\textquotesingle{}igualtat 
+\end{DoxyPostcond}
+
+
+Definición en la línea 99 del archivo Ubicacion.\+cc.
+
+
+\begin{DoxyCode}
+99                                                   \{
+100   \textcolor{keywordflow}{return} *\textcolor{keyword}{this} >= u and *\textcolor{keyword}{this} != u;
+101 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ubicacion_a0ea3b04b8b0ef5a3482049d3ddf63f3b}\label{class_ubicacion_a0ea3b04b8b0ef5a3482049d3ddf63f3b}} 
+\index{Ubicacion@{Ubicacion}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Ubicacion\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_ubicacion}{Ubicacion} \&}]{u }\end{DoxyParamCaption}) const}
+
+
+
+Operador de major o igual. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. és major o igual que {\itshape u} segons els operadors de menor i d\textquotesingle{}igualtat 
+\end{DoxyPostcond}
+
+
+Definición en la línea 95 del archivo Ubicacion.\+cc.
+
+
+\begin{DoxyCode}
+95                                                    \{
+96   \textcolor{keywordflow}{return} not (*\textcolor{keyword}{this} < u);
+97 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}\label{class_ubicacion_aa025967df0ca8761587b09a38cf5b798}} 
+\index{Ubicacion@{Ubicacion}!x@{x}}
+\index{x@{x}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int Ubicacion\+::x\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 117 del archivo Ubicacion.\+hh.
+
+\mbox{\Hypertarget{class_ubicacion_ab314f05b8da651aabb8a623467919a94}\label{class_ubicacion_ab314f05b8da651aabb8a623467919a94}} 
+\index{Ubicacion@{Ubicacion}!y@{y}}
+\index{y@{y}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int Ubicacion\+::y\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 117 del archivo Ubicacion.\+hh.
+
+\mbox{\Hypertarget{class_ubicacion_ad74770f35bf4b18d3959b78cd90b6eb0}\label{class_ubicacion_ad74770f35bf4b18d3959b78cd90b6eb0}} 
+\index{Ubicacion@{Ubicacion}!z@{z}}
+\index{z@{z}!Ubicacion@{Ubicacion}}
+\subsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily int Ubicacion\+::z\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 117 del archivo Ubicacion.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_ubicacion_8hh}{Ubicacion.\+hh}\item 
+\hyperlink{_ubicacion_8cc}{Ubicacion.\+cc}\end{DoxyCompactItemize}

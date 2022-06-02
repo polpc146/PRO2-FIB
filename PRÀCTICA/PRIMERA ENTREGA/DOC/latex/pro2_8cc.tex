@@ -1,0 +1,149 @@
+\hypertarget{pro2_8cc}{}\section{Referencia del Archivo pro2.\+cc}
+\label{pro2_8cc}\index{pro2.\+cc@{pro2.\+cc}}
+Dependencia gráfica adjunta para pro2.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pro2_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{pro2_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em Programa principal para el ejercicio {\itshape Gestión de una terminal de contenedores de carga}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{pro2_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{pro2_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{pro2.\+cc@{pro2.\+cc}!main@{main}}
+\index{main@{main}!pro2.\+cc@{pro2.\+cc}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Programa principal para el ejercicio {\itshape Gestión de una terminal de contenedores de carga}. 
+
+
+
+Definición en la línea 21 del archivo pro2.\+cc.
+
+
+\begin{DoxyCode}
+21             \{
+22     
+23     \textcolor{keywordtype}{string} comando;
+24     cin >> comando;
+25     
+26     \textcolor{keywordflow}{while} (comando != \textcolor{stringliteral}{"fin"}) \{
+27         
+28         \textcolor{keywordtype}{int} HILERAS, PLAZAS, PISOS;
+29         cin >> HILERAS >> PLAZAS >> PISOS;
+30         \hyperlink{class_terminal}{Terminal} terminal (HILERAS, PLAZAS, PISOS);
+31         
+32         cin >> comando;
+33         
+34         \textcolor{keywordflow}{while} (comando != \textcolor{stringliteral}{"fin"} and comando != \textcolor{stringliteral}{"crea\_terminal"}) \{
+35             
+36             \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"inserta\_contenedor"} or comando == \textcolor{stringliteral}{"i"}) \{
+37                 
+38                 \textcolor{keywordtype}{string} matricula;
+39                 \textcolor{keywordtype}{int} longitud;
+40                 cin >> matricula >> longitud;
+41                 \hyperlink{class_contenedor}{Contenedor} contenedor (matricula, longitud);
+42                 
+43                 \textcolor{keywordflow}{if} (terminal.existe\_contenedor (matricula)) cout << \textcolor{stringliteral}{"Ya existe un contenedor con la misma
+       matricula"} << endl;
+44                 
+45                 \textcolor{keywordflow}{else} terminal.insertar\_contenedor (contenedor);
+46             \}
+47             
+48             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"retira\_contenedor"} or comando == \textcolor{stringliteral}{"r"}) \{
+49                 
+50                 \textcolor{keywordtype}{string} matricula;
+51                 cin >> matricula;
+52                 
+53                 \textcolor{keywordflow}{if} (not terminal.existe\_contenedor (matricula)) cout << \textcolor{stringliteral}{"No existe un contenedor con esa
+       matricula"} << endl;
+54                 
+55                 \textcolor{keywordflow}{else} terminal.retirar\_contenedor (matricula);
+56             \}
+57             
+58             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"donde"}) \{
+59                
+60                 \textcolor{keywordtype}{string} matricula;
+61                 cin >> matricula;
+62                 
+63                 \hyperlink{class_ubicacion}{Ubicacion} u;
+64                 u = terminal.donde (matricula);
+65                 u.\hyperlink{class_ubicacion_a6b693a32d8bbd9afce30b11d19b68846}{print}();
+66             \}
+67             
+68             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"longitud"}) \{
+69                 
+70                 \textcolor{keywordtype}{string} matricula;
+71                 cin >> matricula;
+72                 
+73                 \textcolor{keywordflow}{if} (not terminal.existe\_contenedor (matricula)) cout << \textcolor{stringliteral}{"No existe un contenedor con esa
+       matricula"} << endl;
+74                 
+75                 \textcolor{keywordflow}{else} \{
+76                     
+77                     \textcolor{keywordtype}{int} l;
+78                     l = terminal.longitud (matricula);
+79                     cout << l << endl;
+80                 \}
+81             \}
+82             
+83             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"contenedor\_ocupa"}) \{
+84                 
+85                 \textcolor{keywordtype}{int} i, j, k;
+86                 cin >> i >> j >> k;
+87                 
+88                 \textcolor{keywordflow}{if} (i < 0 or i >= HILERAS or j < 0 or j >= PLAZAS or k < 0 or k >= PISOS) cout << \textcolor{stringliteral}{"
+      Ubicacion fuera del area de almacenaje"} << endl;
+89                 
+90                 \textcolor{keywordflow}{else} \{
+91                     
+92                     \hyperlink{class_ubicacion}{Ubicacion} u (i, j, k);
+93                     \textcolor{keywordtype}{string} matricula;
+94                     matricula = terminal.matricula (u);
+95                     
+96                     \textcolor{keywordflow}{if} (matricula != \textcolor{stringliteral}{"-1"}) cout << matricula << endl;
+97                 \}
+98             \}
+99             
+100             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"num\_hileras"}) \{
+101                 
+102                 \textcolor{keywordtype}{int} hileras;
+103                 hileras = terminal.hileras();
+104                 cout << hileras << endl;
+105             \}
+106             
+107             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"num\_plazas"}) \{
+108                 
+109                 \textcolor{keywordtype}{int} plazas;
+110                 plazas = terminal.plazas();
+111                 cout << plazas << endl;
+112             \}
+113             
+114             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"num\_pisos"}) \{
+115                 
+116                 \textcolor{keywordtype}{int} pisos;
+117                 pisos = terminal.pisos();
+118                 cout << pisos << endl;
+119             \}
+120             
+121             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"area\_espera"}) terminal.escribir\_AreaDeEspera();
+122             
+123             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"contenedores"}) terminal.escribir\_ContenedoresAlmacenaje();
+124             
+125             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"area\_almacenaje"}) terminal.representar\_AreaDeAlmacenaje();
+126             
+127             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"huecos"}) terminal.escribir\_Huecos();
+128         \}
+129     \}
+130 \}
+\end{DoxyCode}

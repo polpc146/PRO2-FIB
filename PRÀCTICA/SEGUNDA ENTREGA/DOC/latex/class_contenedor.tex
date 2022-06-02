@@ -1,0 +1,280 @@
+\hypertarget{class_contenedor}{}\section{Referencia de la Clase Contenedor}
+\label{class_contenedor}\index{Contenedor@{Contenedor}}
+
+
+Representa un contenidor amb una matrícula i una longitud.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_contenedor_a1edc43fbcead41c4eba6530b7099cefd}{Contenedor} ()
+\begin{DoxyCompactList}\small\item\em Creadora sense arguments. \end{DoxyCompactList}\item 
+\hyperlink{class_contenedor_a84c6c247b6e5939fdd160160b1d1f449}{Contenedor} (const string \&m, int l)
+\begin{DoxyCompactList}\small\item\em Creadora amb atributs. \end{DoxyCompactList}\item 
+\hyperlink{class_contenedor_ada07edb2a23eec1f84b87b4b3de2c909}{Contenedor} (const \hyperlink{class_contenedor}{Contenedor} \&c)
+\begin{DoxyCompactList}\small\item\em Creadora de còpia. \end{DoxyCompactList}\item 
+\hyperlink{class_contenedor_a3648194b1174752cb24967d1c53787af}{$\sim$\+Contenedor} ()
+\begin{DoxyCompactList}\small\item\em Destructora. \end{DoxyCompactList}\item 
+int \hyperlink{class_contenedor_a203894805dd0b8347f9884990dab0d9d}{longitud} () const
+\begin{DoxyCompactList}\small\item\em Consultora de la longitud d\textquotesingle{}un contenidor. \end{DoxyCompactList}\item 
+string \hyperlink{class_contenedor_aac5839c94f8d3be8a908740a1af0b716}{matricula} () const
+\begin{DoxyCompactList}\small\item\em Consultora de la matrícula d\textquotesingle{}un contenidor. \end{DoxyCompactList}\item 
+void \hyperlink{class_contenedor_abcffc39995e62a9ddad113b2cfeb3279}{print} () const
+\begin{DoxyCompactList}\small\item\em Operació d\textquotesingle{}escriptura del contenidor. \end{DoxyCompactList}\item 
+\hyperlink{class_contenedor}{Contenedor} \& \hyperlink{class_contenedor_a4653bad34c7ff84820bf210306151be6}{operator=} (const \hyperlink{class_contenedor}{Contenedor} \&c)
+\begin{DoxyCompactList}\small\item\em Operador d\textquotesingle{}assignació \end{DoxyCompactList}\item 
+bool \hyperlink{class_contenedor_affecade7507a978e3abb5eea331a509e}{operator==} (const \hyperlink{class_contenedor}{Contenedor} \&c) const
+\begin{DoxyCompactList}\small\item\em Operador d\textquotesingle{}igualtat. \end{DoxyCompactList}\item 
+bool \hyperlink{class_contenedor_a740ea02e3530462a00f8a6ce18b2bf9c}{operator!=} (const \hyperlink{class_contenedor}{Contenedor} \&c) const
+\begin{DoxyCompactList}\small\item\em Operador de desigualtat. \end{DoxyCompactList}\item 
+bool \hyperlink{class_contenedor_a9d590c94118fcc15af16ba5a6be35d09}{operator$<$} (const \hyperlink{class_contenedor}{Contenedor} \&c) const
+\begin{DoxyCompactList}\small\item\em Operador de menor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_contenedor_a587d437b6c6973c3b7008f579c4590a4}{operator$<$=} (const \hyperlink{class_contenedor}{Contenedor} \&c) const
+\begin{DoxyCompactList}\small\item\em Operador de menor o igual. \end{DoxyCompactList}\item 
+bool \hyperlink{class_contenedor_a9520b1def419e6d64e879ab5b594e3a8}{operator$>$} (const \hyperlink{class_contenedor}{Contenedor} \&c) const
+\begin{DoxyCompactList}\small\item\em Operador de major. \end{DoxyCompactList}\item 
+bool \hyperlink{class_contenedor_a7f95853ed98513ffc10c9213df656cfd}{operator$>$=} (const \hyperlink{class_contenedor}{Contenedor} \&c) const
+\begin{DoxyCompactList}\small\item\em Operador de major o igual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un contenidor amb una matrícula i una longitud. 
+
+Definición en la línea 15 del archivo Contenedor.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_contenedor_a1edc43fbcead41c4eba6530b7099cefd}\label{class_contenedor_a1edc43fbcead41c4eba6530b7099cefd}} 
+\index{Contenedor@{Contenedor}!Contenedor@{Contenedor}}
+\index{Contenedor@{Contenedor}!Contenedor@{Contenedor}}
+\subsubsection{\texorpdfstring{Contenedor()}{Contenedor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Contenedor\+::\+Contenedor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora sense arguments. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és un contenidor sense matrícula i longitud zero 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_contenedor_a84c6c247b6e5939fdd160160b1d1f449}\label{class_contenedor_a84c6c247b6e5939fdd160160b1d1f449}} 
+\index{Contenedor@{Contenedor}!Contenedor@{Contenedor}}
+\index{Contenedor@{Contenedor}!Contenedor@{Contenedor}}
+\subsubsection{\texorpdfstring{Contenedor()}{Contenedor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Contenedor\+::\+Contenedor (\begin{DoxyParamCaption}\item[{const string \&}]{m,  }\item[{int}]{l }\end{DoxyParamCaption})}
+
+
+
+Creadora amb atributs. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape m} és una matrícula vàlida i {\itshape l} val entre 1 i 3 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és un contenidor amb matrícula {\itshape m} i longitud {\itshape l} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_contenedor_ada07edb2a23eec1f84b87b4b3de2c909}\label{class_contenedor_ada07edb2a23eec1f84b87b4b3de2c909}} 
+\index{Contenedor@{Contenedor}!Contenedor@{Contenedor}}
+\index{Contenedor@{Contenedor}!Contenedor@{Contenedor}}
+\subsubsection{\texorpdfstring{Contenedor()}{Contenedor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Contenedor\+::\+Contenedor (\begin{DoxyParamCaption}\item[{const \hyperlink{class_contenedor}{Contenedor} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Creadora de còpia. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és un contenidor amb la mateixa matrícula i longitud que {\itshape c} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_contenedor_a3648194b1174752cb24967d1c53787af}\label{class_contenedor_a3648194b1174752cb24967d1c53787af}} 
+\index{Contenedor@{Contenedor}!````~Contenedor@{$\sim$\+Contenedor}}
+\index{````~Contenedor@{$\sim$\+Contenedor}!Contenedor@{Contenedor}}
+\subsubsection{\texorpdfstring{$\sim$\+Contenedor()}{~Contenedor()}}
+{\footnotesize\ttfamily Contenedor\+::$\sim$\+Contenedor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructora. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Destrueix un objecte \hyperlink{class_contenedor}{Contenedor} 
+\end{DoxyPostcond}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_contenedor_a203894805dd0b8347f9884990dab0d9d}\label{class_contenedor_a203894805dd0b8347f9884990dab0d9d}} 
+\index{Contenedor@{Contenedor}!longitud@{longitud}}
+\index{longitud@{longitud}!Contenedor@{Contenedor}}
+\subsubsection{\texorpdfstring{longitud()}{longitud()}}
+{\footnotesize\ttfamily int Contenedor\+::longitud (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de la longitud d\textquotesingle{}un contenidor. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és la longitud del contenidor p.\+i. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_contenedor_aac5839c94f8d3be8a908740a1af0b716}\label{class_contenedor_aac5839c94f8d3be8a908740a1af0b716}} 
+\index{Contenedor@{Contenedor}!matricula@{matricula}}
+\index{matricula@{matricula}!Contenedor@{Contenedor}}
+\subsubsection{\texorpdfstring{matricula()}{matricula()}}
+{\footnotesize\ttfamily string Contenedor\+::matricula (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de la matrícula d\textquotesingle{}un contenidor. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és la matrícula del contenidor p.\+i. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_contenedor_abcffc39995e62a9ddad113b2cfeb3279}\label{class_contenedor_abcffc39995e62a9ddad113b2cfeb3279}} 
+\index{Contenedor@{Contenedor}!print@{print}}
+\index{print@{print}!Contenedor@{Contenedor}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Contenedor\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operació d\textquotesingle{}escriptura del contenidor. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+S\textquotesingle{}ha escrit la matrícula i la longitud del p.\+i. pel canal estàndar de sortida en format {\itshape m}({\itshape l}) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_contenedor_a4653bad34c7ff84820bf210306151be6}\label{class_contenedor_a4653bad34c7ff84820bf210306151be6}} 
+\index{Contenedor@{Contenedor}!operator=@{operator=}}
+\index{operator=@{operator=}!Contenedor@{Contenedor}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{class_contenedor}{Contenedor}\& Contenedor\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_contenedor}{Contenedor} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Operador d\textquotesingle{}assignació 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat és un contenidor amb la mateixa matrícula i longitud que {\itshape c} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_contenedor_affecade7507a978e3abb5eea331a509e}\label{class_contenedor_affecade7507a978e3abb5eea331a509e}} 
+\index{Contenedor@{Contenedor}!operator==@{operator==}}
+\index{operator==@{operator==}!Contenedor@{Contenedor}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Contenedor\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{class_contenedor}{Contenedor} \&}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Operador d\textquotesingle{}igualtat. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. i {\itshape c} tenen la mateixa matrícula i longitud 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_contenedor_a740ea02e3530462a00f8a6ce18b2bf9c}\label{class_contenedor_a740ea02e3530462a00f8a6ce18b2bf9c}} 
+\index{Contenedor@{Contenedor}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Contenedor@{Contenedor}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Contenedor\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_contenedor}{Contenedor} \&}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Operador de desigualtat. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. i {\itshape c} tenen la matrícula o la longitud diferent 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_contenedor_a9d590c94118fcc15af16ba5a6be35d09}\label{class_contenedor_a9d590c94118fcc15af16ba5a6be35d09}} 
+\index{Contenedor@{Contenedor}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Contenedor@{Contenedor}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Contenedor\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_contenedor}{Contenedor} \&}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Operador de menor. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. és menor que {\itshape c} en ordre lexicogràfic per matrícula o en cas d\textquotesingle{}empat per longitud 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_contenedor_a587d437b6c6973c3b7008f579c4590a4}\label{class_contenedor_a587d437b6c6973c3b7008f579c4590a4}} 
+\index{Contenedor@{Contenedor}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Contenedor@{Contenedor}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Contenedor\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_contenedor}{Contenedor} \&}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Operador de menor o igual. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. és menor o igual que {\itshape c} segons els operadors de menor i d\textquotesingle{}igualtat 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_contenedor_a9520b1def419e6d64e879ab5b594e3a8}\label{class_contenedor_a9520b1def419e6d64e879ab5b594e3a8}} 
+\index{Contenedor@{Contenedor}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Contenedor@{Contenedor}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Contenedor\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_contenedor}{Contenedor} \&}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Operador de major. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. és major que {\itshape c} segons els operadors de menor i d\textquotesingle{}igualtat 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_contenedor_a7f95853ed98513ffc10c9213df656cfd}\label{class_contenedor_a7f95853ed98513ffc10c9213df656cfd}} 
+\index{Contenedor@{Contenedor}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Contenedor@{Contenedor}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Contenedor\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_contenedor}{Contenedor} \&}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Operador de major o igual. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultat indica si el p.\+i. és major o igual que {\itshape c} segons els operadors de menor i d\textquotesingle{}igualtat 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_contenedor_8hh}{Contenedor.\+hh}\end{DoxyCompactItemize}

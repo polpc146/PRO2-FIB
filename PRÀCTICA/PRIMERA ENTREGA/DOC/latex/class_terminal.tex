@@ -1,0 +1,406 @@
+\hypertarget{class_terminal}{}\section{Referencia de la Clase Terminal}
+\label{class_terminal}\index{Terminal@{Terminal}}
+
+
+Representa una \hyperlink{class_terminal}{Terminal} de N hileras, M plazas y H pisos.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_terminal_aa448509b5aa1ece53c3d86385655be0e}{Terminal} ()
+\begin{DoxyCompactList}\small\item\em Creadora sin argumentos. \end{DoxyCompactList}\item 
+\hyperlink{class_terminal_a696ee89f0fc7359b528c9f8f2aec064f}{Terminal} (int N, int M, int H)
+\begin{DoxyCompactList}\small\item\em Creadora con atributos. \end{DoxyCompactList}\item 
+\hyperlink{class_terminal_a2502d3b03ed7f7f479b73e6575dedbf0}{Terminal} (const \hyperlink{class_terminal}{Terminal} \&t)
+\begin{DoxyCompactList}\small\item\em Creadora de copia. \end{DoxyCompactList}\item 
+\hyperlink{class_terminal_add5a7d4dd45b68af9a0afb1cc845af2f}{$\sim$\+Terminal} ()
+\begin{DoxyCompactList}\small\item\em Destructora. \end{DoxyCompactList}\item 
+void \hyperlink{class_terminal_a7b12f84e1eeb3dacb6d73f6126bb13e1}{insertar\+\_\+\+Area\+De\+Espera} (const list$<$ \hyperlink{class_contenedor}{Contenedor} $>$ \&vespera)
+\begin{DoxyCompactList}\small\item\em Añade un \hyperlink{class_contenedor}{Contenedor} del area de espera al area de almacenaje. \end{DoxyCompactList}\item 
+void \hyperlink{class_terminal_a0448a45cc3dea91ab383c79246c9e50e}{insertar\+\_\+contenedor} (const \hyperlink{class_contenedor}{Contenedor} \&c)
+\begin{DoxyCompactList}\small\item\em Añade un \hyperlink{class_contenedor}{Contenedor} a la \hyperlink{class_terminal}{Terminal}. \end{DoxyCompactList}\item 
+void \hyperlink{class_terminal_a4a5b00174efb9993ead60369d206375b}{retirar\+\_\+contenedor} (const string \&m)
+\begin{DoxyCompactList}\small\item\em Retira un \hyperlink{class_contenedor}{Contenedor} de la \hyperlink{class_terminal}{Terminal}. \end{DoxyCompactList}\item 
+void \hyperlink{class_terminal_a122e5521bd57ee9ac07db30f5f82a346}{Piso\+\_\+superior} (const \hyperlink{class_segmento}{Segmento} \&s)
+\begin{DoxyCompactList}\small\item\em Detecta los Contenedores que hay encima de un \hyperlink{class_segmento}{Segmento}. \end{DoxyCompactList}\item 
+int \hyperlink{class_terminal_a6e7268ad5b0ffbf1484f1f1522e800f0}{hileras} () const
+\begin{DoxyCompactList}\small\item\em Consultora de las hileras de una \hyperlink{class_terminal}{Terminal}. \end{DoxyCompactList}\item 
+int \hyperlink{class_terminal_a06602e79ec9e7bca40d73d7a6c436fe3}{plazas} () const
+\begin{DoxyCompactList}\small\item\em Consultora de las plazas por hilera de una \hyperlink{class_terminal}{Terminal}. \end{DoxyCompactList}\item 
+int \hyperlink{class_terminal_ae6e79d13bb240d038142256552ae0ec9}{pisos} () const
+\begin{DoxyCompactList}\small\item\em Consultora de los pisos por plaza de una hilera de una \hyperlink{class_terminal}{Terminal}. \end{DoxyCompactList}\item 
+\hyperlink{class_ubicacion}{Ubicacion} \hyperlink{class_terminal_a2847cb58fe61bb488f089bc67a1973fe}{donde} (const string \&m) const
+\begin{DoxyCompactList}\small\item\em Consultora de la \hyperlink{class_ubicacion}{Ubicacion} de una matrícula. \end{DoxyCompactList}\item 
+int \hyperlink{class_terminal_afc6d0f22bcc642c6ac4355e0b02a7d79}{longitud} (const string \&m) const
+\begin{DoxyCompactList}\small\item\em Primera consultora de longitud. \end{DoxyCompactList}\item 
+int \hyperlink{class_terminal_a46db625d1ad0b3b0ddb69657d0711085}{longitud2} (const string \&m, const \hyperlink{class_ubicacion}{Ubicacion} \&u) const
+\begin{DoxyCompactList}\small\item\em Segunda consultora de longitud. \end{DoxyCompactList}\item 
+string \hyperlink{class_terminal_a674811a7b56f57ff5b447d10565e923b}{matricula} (const \hyperlink{class_ubicacion}{Ubicacion} \&u) const
+\begin{DoxyCompactList}\small\item\em Consultora de una matrícula según su \hyperlink{class_ubicacion}{Ubicacion}. \end{DoxyCompactList}\item 
+\hyperlink{class_ubicacion}{Ubicacion} \hyperlink{class_terminal_ab14183e499defc434f593c5767605834}{hueco\+\_\+mas\+\_\+adecuado} (const list$<$ \hyperlink{class_segmento}{Segmento} $>$ \&h, int l) const
+\begin{DoxyCompactList}\small\item\em Encuentra el hueco más adecuado según la estrategia B\+E\+S\+T\+\_\+\+F\+IT para insertar un \hyperlink{class_contenedor}{Contenedor}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_terminal_a6b2cb1486f78ef82f759fb071bb1049d}{existe\+\_\+contenedor} (const string \&m) const
+\begin{DoxyCompactList}\small\item\em Consultora de la existencia del \hyperlink{class_contenedor}{Contenedor} con matricula {\itshape m} en la terminal. \end{DoxyCompactList}\item 
+void \hyperlink{class_terminal_a3da2635443b21d89e5fecc47153a888f}{escribir\+\_\+\+Area\+De\+Espera} () const
+\begin{DoxyCompactList}\small\item\em Operación de escritura del area de espera. \end{DoxyCompactList}\item 
+void \hyperlink{class_terminal_a24c74e2dd8c8e41452a7e890bc925f0e}{escribir\+\_\+\+Contenedores\+Almacenaje} () const
+\begin{DoxyCompactList}\small\item\em Operación de escritura de los contenedores de la terminal. \end{DoxyCompactList}\item 
+void \hyperlink{class_terminal_a32d375e8cecdafbbf0a291f646456dd6}{representar\+\_\+\+Area\+De\+Almacenaje} () const
+\begin{DoxyCompactList}\small\item\em Operación de represtentación bidimensional de una terminal por hileras. \end{DoxyCompactList}\item 
+void \hyperlink{class_terminal_afbfd7c045961e20718f9b5ffa1a31aa1}{escribir\+\_\+\+Huecos} () const
+\begin{DoxyCompactList}\small\item\em Operación de escritura de los huecos del area de almacenaje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa una \hyperlink{class_terminal}{Terminal} de N hileras, M plazas y H pisos. 
+
+Definición en la línea 26 del archivo Terminal\+De\+Contenedores\+De\+Carga.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_terminal_aa448509b5aa1ece53c3d86385655be0e}\label{class_terminal_aa448509b5aa1ece53c3d86385655be0e}} 
+\index{Terminal@{Terminal}!Terminal@{Terminal}}
+\index{Terminal@{Terminal}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{Terminal()}{Terminal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Terminal\+::\+Terminal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora sin argumentos. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una \hyperlink{class_terminal}{Terminal} de cero hileras, cero plazas y cero pisos 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_a696ee89f0fc7359b528c9f8f2aec064f}\label{class_terminal_a696ee89f0fc7359b528c9f8f2aec064f}} 
+\index{Terminal@{Terminal}!Terminal@{Terminal}}
+\index{Terminal@{Terminal}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{Terminal()}{Terminal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Terminal\+::\+Terminal (\begin{DoxyParamCaption}\item[{int}]{N,  }\item[{int}]{M,  }\item[{int}]{H }\end{DoxyParamCaption})}
+
+
+
+Creadora con atributos. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una \hyperlink{class_terminal}{Terminal} de {\itshape N} hileras, {\itshape M} plazas y {\itshape H} pisos, dos listas {\itshape Area\+De\+Espera} y {\itshape Contenedores\+Almacenaje} vacías y una lista de {\itshape Huecos} inicializada 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_a2502d3b03ed7f7f479b73e6575dedbf0}\label{class_terminal_a2502d3b03ed7f7f479b73e6575dedbf0}} 
+\index{Terminal@{Terminal}!Terminal@{Terminal}}
+\index{Terminal@{Terminal}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{Terminal()}{Terminal()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Terminal\+::\+Terminal (\begin{DoxyParamCaption}\item[{const \hyperlink{class_terminal}{Terminal} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Creadora de copia. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una \hyperlink{class_terminal}{Terminal} con las mismas hileras, plazas y pisos que {\itshape t} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_add5a7d4dd45b68af9a0afb1cc845af2f}\label{class_terminal_add5a7d4dd45b68af9a0afb1cc845af2f}} 
+\index{Terminal@{Terminal}!````~Terminal@{$\sim$\+Terminal}}
+\index{````~Terminal@{$\sim$\+Terminal}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{$\sim$\+Terminal()}{~Terminal()}}
+{\footnotesize\ttfamily Terminal\+::$\sim$\+Terminal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructora. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Destruye un objeto \hyperlink{class_terminal}{Terminal} 
+\end{DoxyPostcond}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_terminal_a7b12f84e1eeb3dacb6d73f6126bb13e1}\label{class_terminal_a7b12f84e1eeb3dacb6d73f6126bb13e1}} 
+\index{Terminal@{Terminal}!insertar\+\_\+\+Area\+De\+Espera@{insertar\+\_\+\+Area\+De\+Espera}}
+\index{insertar\+\_\+\+Area\+De\+Espera@{insertar\+\_\+\+Area\+De\+Espera}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{insertar\+\_\+\+Area\+De\+Espera()}{insertar\_AreaDeEspera()}}
+{\footnotesize\ttfamily void Terminal\+::insertar\+\_\+\+Area\+De\+Espera (\begin{DoxyParamCaption}\item[{const list$<$ \hyperlink{class_contenedor}{Contenedor} $>$ \&}]{vespera }\end{DoxyParamCaption})}
+
+
+
+Añade un \hyperlink{class_contenedor}{Contenedor} del area de espera al area de almacenaje. 
+
+\begin{DoxyPrecond}{Precondición}
+La lista {\itshape Area\+De\+Espera} no está vacía 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se han inserido todos los Contenedores (empezando por el último que entró al area de espera) al {\itshape Area\+De\+Almacenaje} si tienen un hueco disponible y se actualiza la lista de Huecos si se ha conseguido insertar algún \hyperlink{class_contenedor}{Contenedor} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_a0448a45cc3dea91ab383c79246c9e50e}\label{class_terminal_a0448a45cc3dea91ab383c79246c9e50e}} 
+\index{Terminal@{Terminal}!insertar\+\_\+contenedor@{insertar\+\_\+contenedor}}
+\index{insertar\+\_\+contenedor@{insertar\+\_\+contenedor}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{insertar\+\_\+contenedor()}{insertar\_contenedor()}}
+{\footnotesize\ttfamily void Terminal\+::insertar\+\_\+contenedor (\begin{DoxyParamCaption}\item[{const \hyperlink{class_contenedor}{Contenedor} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Añade un \hyperlink{class_contenedor}{Contenedor} a la \hyperlink{class_terminal}{Terminal}. 
+
+\begin{DoxyPrecond}{Precondición}
+No existe el \hyperlink{class_contenedor}{Contenedor} {\itshape c} en la \hyperlink{class_terminal}{Terminal} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se inserta el \hyperlink{class_contenedor}{Contenedor} en el {\itshape Area\+De\+Espera} si no tiene hueco, en caso contrario se coloca en el {\itshape Area\+De\+Almacenaje} en la \hyperlink{class_ubicacion}{Ubicacion} más adecuada según la estrategia B\+E\+S\+T\+\_\+\+F\+IT, se actualizan las listas Area\+De\+Espera, Contenedores\+Almacenaje y Huecos y se recorre el Area\+De\+Espera por si se puede colocar algún \hyperlink{class_contenedor}{Contenedor} más. En ambos casos se imprime por pantalla la \hyperlink{class_ubicacion}{Ubicacion} donde se ha colocado 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_a4a5b00174efb9993ead60369d206375b}\label{class_terminal_a4a5b00174efb9993ead60369d206375b}} 
+\index{Terminal@{Terminal}!retirar\+\_\+contenedor@{retirar\+\_\+contenedor}}
+\index{retirar\+\_\+contenedor@{retirar\+\_\+contenedor}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{retirar\+\_\+contenedor()}{retirar\_contenedor()}}
+{\footnotesize\ttfamily void Terminal\+::retirar\+\_\+contenedor (\begin{DoxyParamCaption}\item[{const string \&}]{m }\end{DoxyParamCaption})}
+
+
+
+Retira un \hyperlink{class_contenedor}{Contenedor} de la \hyperlink{class_terminal}{Terminal}. 
+
+\begin{DoxyPrecond}{Precondición}
+Existe el \hyperlink{class_contenedor}{Contenedor} con matrícula {\itshape m} en la \hyperlink{class_terminal}{Terminal} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha retirado el \hyperlink{class_contenedor}{Contenedor} con matrícula {\itshape m} de la \hyperlink{class_terminal}{Terminal}, se actualizan las listas Area\+De\+Espera, Contenedores\+Almacenaje y Huecos y se recorre el Area\+De\+Espera por si se puede colocar algún \hyperlink{class_contenedor}{Contenedor} más. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_a122e5521bd57ee9ac07db30f5f82a346}\label{class_terminal_a122e5521bd57ee9ac07db30f5f82a346}} 
+\index{Terminal@{Terminal}!Piso\+\_\+superior@{Piso\+\_\+superior}}
+\index{Piso\+\_\+superior@{Piso\+\_\+superior}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{Piso\+\_\+superior()}{Piso\_superior()}}
+{\footnotesize\ttfamily void Terminal\+::\+Piso\+\_\+superior (\begin{DoxyParamCaption}\item[{const \hyperlink{class_segmento}{Segmento} \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Detecta los Contenedores que hay encima de un \hyperlink{class_segmento}{Segmento}. 
+
+\begin{DoxyPrecond}{Precondición}
+El \hyperlink{class_segmento}{Segmento} {\itshape s} indica la \hyperlink{class_ubicacion}{Ubicacion} inicial y la longitud de un \hyperlink{class_contenedor}{Contenedor} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se han movido los Contenedores de los pisos superiores al \hyperlink{class_segmento}{Segmento} {\itshape s} al area de espera 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_a6e7268ad5b0ffbf1484f1f1522e800f0}\label{class_terminal_a6e7268ad5b0ffbf1484f1f1522e800f0}} 
+\index{Terminal@{Terminal}!hileras@{hileras}}
+\index{hileras@{hileras}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{hileras()}{hileras()}}
+{\footnotesize\ttfamily int Terminal\+::hileras (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de las hileras de una \hyperlink{class_terminal}{Terminal}. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el número de hileras de la \hyperlink{class_terminal}{Terminal} p.\+i 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_a06602e79ec9e7bca40d73d7a6c436fe3}\label{class_terminal_a06602e79ec9e7bca40d73d7a6c436fe3}} 
+\index{Terminal@{Terminal}!plazas@{plazas}}
+\index{plazas@{plazas}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{plazas()}{plazas()}}
+{\footnotesize\ttfamily int Terminal\+::plazas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de las plazas por hilera de una \hyperlink{class_terminal}{Terminal}. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el número de plazas por hilera de la \hyperlink{class_terminal}{Terminal} p.\+i 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_ae6e79d13bb240d038142256552ae0ec9}\label{class_terminal_ae6e79d13bb240d038142256552ae0ec9}} 
+\index{Terminal@{Terminal}!pisos@{pisos}}
+\index{pisos@{pisos}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{pisos()}{pisos()}}
+{\footnotesize\ttfamily int Terminal\+::pisos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de los pisos por plaza de una hilera de una \hyperlink{class_terminal}{Terminal}. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el número de pisos por plaza de una hilera de la \hyperlink{class_terminal}{Terminal} p.\+i 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_a2847cb58fe61bb488f089bc67a1973fe}\label{class_terminal_a2847cb58fe61bb488f089bc67a1973fe}} 
+\index{Terminal@{Terminal}!donde@{donde}}
+\index{donde@{donde}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{donde()}{donde()}}
+{\footnotesize\ttfamily \hyperlink{class_ubicacion}{Ubicacion} Terminal\+::donde (\begin{DoxyParamCaption}\item[{const string \&}]{m }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de la \hyperlink{class_ubicacion}{Ubicacion} de una matrícula. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la \hyperlink{class_ubicacion}{Ubicacion} $<${\itshape -\/1},{\itshape 0},{\itshape 0}$>$ si está en el area de espera, es $<${\itshape -\/1},{\itshape -\/1},{\itshape -\/1}$>$ si no está en el area de espera ni en el area de almacenaje, o es la \hyperlink{class_ubicacion}{Ubicacion} con menor número de plaza que ocupa el \hyperlink{class_contenedor}{Contenedor} con matrícula {\itshape m} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_afc6d0f22bcc642c6ac4355e0b02a7d79}\label{class_terminal_afc6d0f22bcc642c6ac4355e0b02a7d79}} 
+\index{Terminal@{Terminal}!longitud@{longitud}}
+\index{longitud@{longitud}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{longitud()}{longitud()}}
+{\footnotesize\ttfamily int Terminal\+::longitud (\begin{DoxyParamCaption}\item[{const string \&}]{m }\end{DoxyParamCaption}) const}
+
+
+
+Primera consultora de longitud. 
+
+\begin{DoxyPrecond}{Precondición}
+Existe un \hyperlink{class_contenedor}{Contenedor} con matrícula {\itshape m} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la longitud del \hyperlink{class_contenedor}{Contenedor} con matrícula {\itshape m} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_a46db625d1ad0b3b0ddb69657d0711085}\label{class_terminal_a46db625d1ad0b3b0ddb69657d0711085}} 
+\index{Terminal@{Terminal}!longitud2@{longitud2}}
+\index{longitud2@{longitud2}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{longitud2()}{longitud2()}}
+{\footnotesize\ttfamily int Terminal\+::longitud2 (\begin{DoxyParamCaption}\item[{const string \&}]{m,  }\item[{const \hyperlink{class_ubicacion}{Ubicacion} \&}]{u }\end{DoxyParamCaption}) const}
+
+
+
+Segunda consultora de longitud. 
+
+\begin{DoxyPrecond}{Precondición}
+La \hyperlink{class_ubicacion}{Ubicacion} {\itshape u} es la \hyperlink{class_ubicacion}{Ubicacion} con menor número de plaza que ocupa el \hyperlink{class_contenedor}{Contenedor} con matrícula {\itshape m} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la longitud del \hyperlink{class_contenedor}{Contenedor} con matrícula {\itshape m} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_a674811a7b56f57ff5b447d10565e923b}\label{class_terminal_a674811a7b56f57ff5b447d10565e923b}} 
+\index{Terminal@{Terminal}!matricula@{matricula}}
+\index{matricula@{matricula}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{matricula()}{matricula()}}
+{\footnotesize\ttfamily string Terminal\+::matricula (\begin{DoxyParamCaption}\item[{const \hyperlink{class_ubicacion}{Ubicacion} \&}]{u }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de una matrícula según su \hyperlink{class_ubicacion}{Ubicacion}. 
+
+\begin{DoxyPrecond}{Precondición}
+La \hyperlink{class_ubicacion}{Ubicacion} {\itshape u} pertenece al area de almacenaje 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si hay un \hyperlink{class_contenedor}{Contenedor} ocupando la \hyperlink{class_ubicacion}{Ubicacion} {\itshape u}, el resultado es la matricula del \hyperlink{class_contenedor}{Contenedor}, en caso contrario el resultado es -\/1 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_ab14183e499defc434f593c5767605834}\label{class_terminal_ab14183e499defc434f593c5767605834}} 
+\index{Terminal@{Terminal}!hueco\+\_\+mas\+\_\+adecuado@{hueco\+\_\+mas\+\_\+adecuado}}
+\index{hueco\+\_\+mas\+\_\+adecuado@{hueco\+\_\+mas\+\_\+adecuado}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{hueco\+\_\+mas\+\_\+adecuado()}{hueco\_mas\_adecuado()}}
+{\footnotesize\ttfamily \hyperlink{class_ubicacion}{Ubicacion} Terminal\+::hueco\+\_\+mas\+\_\+adecuado (\begin{DoxyParamCaption}\item[{const list$<$ \hyperlink{class_segmento}{Segmento} $>$ \&}]{h,  }\item[{int}]{l }\end{DoxyParamCaption}) const}
+
+
+
+Encuentra el hueco más adecuado según la estrategia B\+E\+S\+T\+\_\+\+F\+IT para insertar un \hyperlink{class_contenedor}{Contenedor}. 
+
+\begin{DoxyPrecond}{Precondición}
+La lista de huecos {\itshape h} no está vacía y 1$<$=l$<$=3 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la \hyperlink{class_ubicacion}{Ubicacion} $<${\itshape -\/1},{\itshape 0},{\itshape 0}$>$ si no hay un hueco disponible en el area de almacenaje y, por lo tanto, se colocará el \hyperlink{class_contenedor}{Contenedor} en el area de espera; en caso contrario el resultado es la \hyperlink{class_ubicacion}{Ubicacion} dónde empieza el hueco con menor {\itshape longitud}, número menor de {\itshape hilera} y número menor de {\itshape plaza} posible en la que es posible insertar el contenedor 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_a6b2cb1486f78ef82f759fb071bb1049d}\label{class_terminal_a6b2cb1486f78ef82f759fb071bb1049d}} 
+\index{Terminal@{Terminal}!existe\+\_\+contenedor@{existe\+\_\+contenedor}}
+\index{existe\+\_\+contenedor@{existe\+\_\+contenedor}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{existe\+\_\+contenedor()}{existe\_contenedor()}}
+{\footnotesize\ttfamily bool Terminal\+::existe\+\_\+contenedor (\begin{DoxyParamCaption}\item[{const string \&}]{m }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de la existencia del \hyperlink{class_contenedor}{Contenedor} con matricula {\itshape m} en la terminal. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado indica {\itshape Cierto} si existe un \hyperlink{class_contenedor}{Contenedor} con matricula {\itshape m} en la \hyperlink{class_terminal}{Terminal}, en caso contrario indica {\itshape Falso} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_a3da2635443b21d89e5fecc47153a888f}\label{class_terminal_a3da2635443b21d89e5fecc47153a888f}} 
+\index{Terminal@{Terminal}!escribir\+\_\+\+Area\+De\+Espera@{escribir\+\_\+\+Area\+De\+Espera}}
+\index{escribir\+\_\+\+Area\+De\+Espera@{escribir\+\_\+\+Area\+De\+Espera}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{escribir\+\_\+\+Area\+De\+Espera()}{escribir\_AreaDeEspera()}}
+{\footnotesize\ttfamily void Terminal\+::escribir\+\_\+\+Area\+De\+Espera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operación de escritura del area de espera. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se escriben los Contenedores del area de espera en orden de salida uno encima de otro 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_a24c74e2dd8c8e41452a7e890bc925f0e}\label{class_terminal_a24c74e2dd8c8e41452a7e890bc925f0e}} 
+\index{Terminal@{Terminal}!escribir\+\_\+\+Contenedores\+Almacenaje@{escribir\+\_\+\+Contenedores\+Almacenaje}}
+\index{escribir\+\_\+\+Contenedores\+Almacenaje@{escribir\+\_\+\+Contenedores\+Almacenaje}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{escribir\+\_\+\+Contenedores\+Almacenaje()}{escribir\_ContenedoresAlmacenaje()}}
+{\footnotesize\ttfamily void Terminal\+::escribir\+\_\+\+Contenedores\+Almacenaje (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operación de escritura de los contenedores de la terminal. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se escribe la matrícula del \hyperlink{class_contenedor}{Contenedor} seguida de su \hyperlink{class_ubicacion}{Ubicacion} y su longitud en orden ascendente de matrícula y una encima de otra 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_a32d375e8cecdafbbf0a291f646456dd6}\label{class_terminal_a32d375e8cecdafbbf0a291f646456dd6}} 
+\index{Terminal@{Terminal}!representar\+\_\+\+Area\+De\+Almacenaje@{representar\+\_\+\+Area\+De\+Almacenaje}}
+\index{representar\+\_\+\+Area\+De\+Almacenaje@{representar\+\_\+\+Area\+De\+Almacenaje}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{representar\+\_\+\+Area\+De\+Almacenaje()}{representar\_AreaDeAlmacenaje()}}
+{\footnotesize\ttfamily void Terminal\+::representar\+\_\+\+Area\+De\+Almacenaje (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operación de represtentación bidimensional de una terminal por hileras. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se representa cada hilera en forma de matriz con la inicial de los contenedores tantas veces como su longitud 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_terminal_afbfd7c045961e20718f9b5ffa1a31aa1}\label{class_terminal_afbfd7c045961e20718f9b5ffa1a31aa1}} 
+\index{Terminal@{Terminal}!escribir\+\_\+\+Huecos@{escribir\+\_\+\+Huecos}}
+\index{escribir\+\_\+\+Huecos@{escribir\+\_\+\+Huecos}!Terminal@{Terminal}}
+\subsubsection{\texorpdfstring{escribir\+\_\+\+Huecos()}{escribir\_Huecos()}}
+{\footnotesize\ttfamily void Terminal\+::escribir\+\_\+\+Huecos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operación de escritura de los huecos del area de almacenaje. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se escriben los Segmentos de los huecos que hay en el area de almacenaje uno encima de otro 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_terminal_de_contenedores_de_carga_8hh}{Terminal\+De\+Contenedores\+De\+Carga.\+hh}\end{DoxyCompactItemize}

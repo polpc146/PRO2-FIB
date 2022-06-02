@@ -1,0 +1,17 @@
+Se utilizara para:
+    que hueco elegir si hay varias posibilidades
+    gestionar area de espera
+
+En una insercion;
+    se intenta colocar siempre en un hueco de exactamente de la misma longitud que plazas tenga el contenedor,
+    si no hay, en uno de longitud = plazas +1, y asi sucesivamente
+    si hay mas de un hueco de la misma longitud disponible se elige el que tiene <i (en caso de empate <j)
+    si no hay hueco disponible se coloca en el area de espera
+    despues de cada insercion se revisa el area de espera por si se han creado huecos validos
+    el area de espera se recorre empezando por el ultimo elemento
+
+En la retirada:
+    se empieza desde el piso superior afectado de izquierda a derecha, poniendo los respectivos contenedores
+    en el area de espera y quitando siempre que es posible los contenedores de la izquierda si no tienen nada
+    encima
+    despues se insertan los contenedores del area de espera que se puedan de nuevo

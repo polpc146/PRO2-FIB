@@ -1,0 +1,19 @@
+\hypertarget{_cubeta_8hh}{}\section{Referencia del Archivo Cubeta.\+hh}
+\label{_cubeta_8hh}\index{Cubeta.\+hh@{Cubeta.\+hh}}
+
+
+Especificación de la clase \hyperlink{class_cubeta}{Cubeta}.  
+
+
+Dependencia gráfica adjunta para Cubeta.\+hh\+:
+% FIG 0
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_cubeta}{Cubeta}
+\begin{DoxyCompactList}\small\item\em Representa una cubeta de ropa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Especificación de la clase \hyperlink{class_cubeta}{Cubeta}. 
+

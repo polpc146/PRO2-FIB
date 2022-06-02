@@ -1,0 +1,314 @@
+\hypertarget{class_espera}{}\section{Referencia de la Clase Espera}
+\label{class_espera}\index{Espera@{Espera}}
+
+
+Representa un área de espera de una terminal de contenedores de carga.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_espera_aeabb86dcbffd8c2b686fe330581ac82b}{Espera} ()
+\begin{DoxyCompactList}\small\item\em Creadora sin argumentos. \end{DoxyCompactList}\item 
+\hyperlink{class_espera_a970b7c780ad48f158c408586d4b3b4b3}{$\sim$\+Espera} ()
+\begin{DoxyCompactList}\small\item\em Destructora. \end{DoxyCompactList}\item 
+void \hyperlink{class_espera_a7154136eb8addbeebe5cc1406d6400c0}{insertar\+\_\+contenedor} (const \hyperlink{class_contenedor}{Contenedor} \&c)
+\begin{DoxyCompactList}\small\item\em Añade un \hyperlink{class_contenedor}{Contenedor} al área de espera. \end{DoxyCompactList}\item 
+void \hyperlink{class_espera_a925d1944461d0e9bedef4d788283b98f}{eliminar\+\_\+contenedor} (const \hyperlink{class_contenedor}{Contenedor} \&c)
+\begin{DoxyCompactList}\small\item\em Elimina un \hyperlink{class_contenedor}{Contenedor} del área de espera. \end{DoxyCompactList}\item 
+bool \hyperlink{class_espera_ae97d5ed76fdcf057835b51a87deaffb9}{hay\+\_\+contenedores} () const
+\begin{DoxyCompactList}\small\item\em Consultora de si hay contenedores en el área de espera. \end{DoxyCompactList}\item 
+\hyperlink{class_contenedor}{Contenedor} \hyperlink{class_espera_acf8ff210426ca3e799cf667d887e9daa}{primer\+\_\+contenedor} () const
+\begin{DoxyCompactList}\small\item\em Consultora del primer contenedor del área de espera. \end{DoxyCompactList}\item 
+\hyperlink{class_contenedor}{Contenedor} \hyperlink{class_espera_ab4205de26cc518d8130d6506796697ea}{contenedor\+\_\+disponible} (const \hyperlink{class_contenedor}{Contenedor} \&c, bool b) const
+\begin{DoxyCompactList}\small\item\em Consultora de los contenedores que hay en el área de espera esperando a ser insertados. \end{DoxyCompactList}\item 
+void \hyperlink{class_espera_aacb008e5be8ecd85fbba9cdef8b8be33}{escribir\+\_\+\+Area\+De\+Espera} () const
+\begin{DoxyCompactList}\small\item\em Operación de escritura del área de espera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+list$<$ \hyperlink{class_contenedor}{Contenedor} $>$ \hyperlink{class_espera_adafca5e22c5bc21e517b363144fc6b18}{Area\+De\+Espera}
+\begin{DoxyCompactList}\small\item\em Lista para guardar los contenedores que hay en el área de espera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un área de espera de una terminal de contenedores de carga. 
+
+Definición en la línea 21 del archivo Area\+De\+Espera.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_espera_aeabb86dcbffd8c2b686fe330581ac82b}\label{class_espera_aeabb86dcbffd8c2b686fe330581ac82b}} 
+\index{Espera@{Espera}!Espera@{Espera}}
+\index{Espera@{Espera}!Espera@{Espera}}
+\subsubsection{\texorpdfstring{Espera()}{Espera()}}
+{\footnotesize\ttfamily Espera\+::\+Espera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora sin argumentos. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un área de espera vacío 
+\end{DoxyPostcond}
+
+
+Definición en la línea 8 del archivo Area\+De\+Espera.\+cc.
+
+
+\begin{DoxyCode}
+8                \{
+9     
+10     \hyperlink{class_espera_adafca5e22c5bc21e517b363144fc6b18}{AreaDeEspera} = list <Contenedor>();
+11 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_espera_a970b7c780ad48f158c408586d4b3b4b3}\label{class_espera_a970b7c780ad48f158c408586d4b3b4b3}} 
+\index{Espera@{Espera}!````~Espera@{$\sim$\+Espera}}
+\index{````~Espera@{$\sim$\+Espera}!Espera@{Espera}}
+\subsubsection{\texorpdfstring{$\sim$\+Espera()}{~Espera()}}
+{\footnotesize\ttfamily Espera\+::$\sim$\+Espera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructora. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Destruye un objeto \hyperlink{class_espera}{Espera} 
+\end{DoxyPostcond}
+
+
+Definición en la línea 15 del archivo Area\+De\+Espera.\+cc.
+
+
+\begin{DoxyCode}
+15 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_espera_a7154136eb8addbeebe5cc1406d6400c0}\label{class_espera_a7154136eb8addbeebe5cc1406d6400c0}} 
+\index{Espera@{Espera}!insertar\+\_\+contenedor@{insertar\+\_\+contenedor}}
+\index{insertar\+\_\+contenedor@{insertar\+\_\+contenedor}!Espera@{Espera}}
+\subsubsection{\texorpdfstring{insertar\+\_\+contenedor()}{insertar\_contenedor()}}
+{\footnotesize\ttfamily void Espera\+::insertar\+\_\+contenedor (\begin{DoxyParamCaption}\item[{const \hyperlink{class_contenedor}{Contenedor} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Añade un \hyperlink{class_contenedor}{Contenedor} al área de espera. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape c} no existe en el área de espera 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El \hyperlink{class_contenedor}{Contenedor} {\itshape c} ocupa la primera posicion de la lista Area\+De\+Espera 
+\end{DoxyPostcond}
+
+
+Definición en la línea 19 del archivo Area\+De\+Espera.\+cc.
+
+
+\begin{DoxyCode}
+19                                                      \{
+20     
+21     \hyperlink{class_espera_adafca5e22c5bc21e517b363144fc6b18}{AreaDeEspera}.push\_front(c);
+22 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_espera_a925d1944461d0e9bedef4d788283b98f}\label{class_espera_a925d1944461d0e9bedef4d788283b98f}} 
+\index{Espera@{Espera}!eliminar\+\_\+contenedor@{eliminar\+\_\+contenedor}}
+\index{eliminar\+\_\+contenedor@{eliminar\+\_\+contenedor}!Espera@{Espera}}
+\subsubsection{\texorpdfstring{eliminar\+\_\+contenedor()}{eliminar\_contenedor()}}
+{\footnotesize\ttfamily void Espera\+::eliminar\+\_\+contenedor (\begin{DoxyParamCaption}\item[{const \hyperlink{class_contenedor}{Contenedor} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Elimina un \hyperlink{class_contenedor}{Contenedor} del área de espera. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape c} existe en el área de espera 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El \hyperlink{class_contenedor}{Contenedor} {\itshape c} no esta en la lista Area\+De\+Espera 
+\end{DoxyPostcond}
+
+
+Definición en la línea 24 del archivo Area\+De\+Espera.\+cc.
+
+
+\begin{DoxyCode}
+24                                                      \{
+25     
+26     \textcolor{keywordflow}{for} (list<Contenedor>::const\_iterator it = \hyperlink{class_espera_adafca5e22c5bc21e517b363144fc6b18}{AreaDeEspera}.begin(); it != 
+      \hyperlink{class_espera_adafca5e22c5bc21e517b363144fc6b18}{AreaDeEspera}.end(); ++it) \{
+27         
+28         \textcolor{keywordflow}{if} (*it == c) \{
+29             
+30             it = \hyperlink{class_espera_adafca5e22c5bc21e517b363144fc6b18}{AreaDeEspera}.erase (it);
+31             \textcolor{keywordflow}{return};
+32         \}
+33     \}
+34 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_espera_ae97d5ed76fdcf057835b51a87deaffb9}\label{class_espera_ae97d5ed76fdcf057835b51a87deaffb9}} 
+\index{Espera@{Espera}!hay\+\_\+contenedores@{hay\+\_\+contenedores}}
+\index{hay\+\_\+contenedores@{hay\+\_\+contenedores}!Espera@{Espera}}
+\subsubsection{\texorpdfstring{hay\+\_\+contenedores()}{hay\_contenedores()}}
+{\footnotesize\ttfamily bool Espera\+::hay\+\_\+contenedores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de si hay contenedores en el área de espera. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+{\itshape Cierto} si hay almenos un contenedor, {\itshape falso} en caso contrario 
+\end{DoxyPostcond}
+
+
+Definición en la línea 38 del archivo Area\+De\+Espera.\+cc.
+
+
+\begin{DoxyCode}
+38                                     \{
+39     
+40     \textcolor{keywordflow}{return} not \hyperlink{class_espera_adafca5e22c5bc21e517b363144fc6b18}{AreaDeEspera}.empty();
+41 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_espera_acf8ff210426ca3e799cf667d887e9daa}\label{class_espera_acf8ff210426ca3e799cf667d887e9daa}} 
+\index{Espera@{Espera}!primer\+\_\+contenedor@{primer\+\_\+contenedor}}
+\index{primer\+\_\+contenedor@{primer\+\_\+contenedor}!Espera@{Espera}}
+\subsubsection{\texorpdfstring{primer\+\_\+contenedor()}{primer\_contenedor()}}
+{\footnotesize\ttfamily \hyperlink{class_contenedor}{Contenedor} Espera\+::primer\+\_\+contenedor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora del primer contenedor del área de espera. 
+
+\begin{DoxyPrecond}{Precondición}
+La lista {\itshape Area\+De\+Espera} no está vacía 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el primer contenedor del área de espera 
+\end{DoxyPostcond}
+
+
+Definición en la línea 43 del archivo Area\+De\+Espera.\+cc.
+
+
+\begin{DoxyCode}
+43                                            \{
+44     
+45     \textcolor{keywordflow}{return} *\hyperlink{class_espera_adafca5e22c5bc21e517b363144fc6b18}{AreaDeEspera}.begin();
+46 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_espera_ab4205de26cc518d8130d6506796697ea}\label{class_espera_ab4205de26cc518d8130d6506796697ea}} 
+\index{Espera@{Espera}!contenedor\+\_\+disponible@{contenedor\+\_\+disponible}}
+\index{contenedor\+\_\+disponible@{contenedor\+\_\+disponible}!Espera@{Espera}}
+\subsubsection{\texorpdfstring{contenedor\+\_\+disponible()}{contenedor\_disponible()}}
+{\footnotesize\ttfamily \hyperlink{class_contenedor}{Contenedor} Espera\+::contenedor\+\_\+disponible (\begin{DoxyParamCaption}\item[{const \hyperlink{class_contenedor}{Contenedor} \&}]{c,  }\item[{bool}]{b }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de los contenedores que hay en el área de espera esperando a ser insertados. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape b} se pasa como {\itshape Cierto} si anteriormente se ha podido insertar un contenedor del área de espera o si es el primera vez que se consulta, se pasa como {\itshape Falso} si no se ha podido ubicar un contenedor anterior, {\itshape c} es el primer contenedor de la lista si es la primera llamada a la funcion o es el ultimo contenedor de la lista que se ha consultado 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+{\itshape c} es el siguiente contenedor que tocará observar si cabe en el área de almacenaje o es un contenedor vacío si ya no hay más contenedores que analizar 
+\end{DoxyPostcond}
+
+
+Definición en la línea 48 del archivo Area\+De\+Espera.\+cc.
+
+
+\begin{DoxyCode}
+48                                                                            \{
+49     
+50     \hyperlink{class_contenedor}{Contenedor} cont;
+51     \textcolor{keywordflow}{if} (not \hyperlink{class_espera_adafca5e22c5bc21e517b363144fc6b18}{AreaDeEspera}.empty()) \{
+52         
+53         \textcolor{keywordflow}{if} (b) \{
+54             
+55             cont = *\hyperlink{class_espera_adafca5e22c5bc21e517b363144fc6b18}{AreaDeEspera}.begin();
+56         \}
+57         \textcolor{keywordflow}{else} \{
+58             
+59             list<Contenedor>::const\_iterator it = \hyperlink{class_espera_adafca5e22c5bc21e517b363144fc6b18}{AreaDeEspera}.begin();
+60             \textcolor{keywordflow}{while} (*it != c) \{
+61                 
+62                 ++it;
+63             \}
+64             ++it;
+65             \textcolor{keywordflow}{if} (it != \hyperlink{class_espera_adafca5e22c5bc21e517b363144fc6b18}{AreaDeEspera}.end()) \{
+66                 
+67                 cont = *it;
+68             \}
+69         \}
+70     \}
+71     \textcolor{keywordflow}{return} cont;
+72 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_espera_aacb008e5be8ecd85fbba9cdef8b8be33}\label{class_espera_aacb008e5be8ecd85fbba9cdef8b8be33}} 
+\index{Espera@{Espera}!escribir\+\_\+\+Area\+De\+Espera@{escribir\+\_\+\+Area\+De\+Espera}}
+\index{escribir\+\_\+\+Area\+De\+Espera@{escribir\+\_\+\+Area\+De\+Espera}!Espera@{Espera}}
+\subsubsection{\texorpdfstring{escribir\+\_\+\+Area\+De\+Espera()}{escribir\_AreaDeEspera()}}
+{\footnotesize\ttfamily void Espera\+::escribir\+\_\+\+Area\+De\+Espera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operación de escritura del área de espera. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se escriben los Contenedores del área de espera en orden de salida uno encima de otro 
+\end{DoxyPostcond}
+
+
+Definición en la línea 76 del archivo Area\+De\+Espera.\+cc.
+
+
+\begin{DoxyCode}
+76                                          \{
+77     
+78     \textcolor{keywordflow}{for} (list <Contenedor>::const\_iterator it = \hyperlink{class_espera_adafca5e22c5bc21e517b363144fc6b18}{AreaDeEspera}.begin(); it != 
+      \hyperlink{class_espera_adafca5e22c5bc21e517b363144fc6b18}{AreaDeEspera}.end(); ++it) \{
+79         
+80         (*it).print();
+81         cout << endl;
+82     \}
+83 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_espera_adafca5e22c5bc21e517b363144fc6b18}\label{class_espera_adafca5e22c5bc21e517b363144fc6b18}} 
+\index{Espera@{Espera}!Area\+De\+Espera@{Area\+De\+Espera}}
+\index{Area\+De\+Espera@{Area\+De\+Espera}!Espera@{Espera}}
+\subsubsection{\texorpdfstring{Area\+De\+Espera}{AreaDeEspera}}
+{\footnotesize\ttfamily list$<$\hyperlink{class_contenedor}{Contenedor}$>$ Espera\+::\+Area\+De\+Espera\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lista para guardar los contenedores que hay en el área de espera. 
+
+
+
+Definición en la línea 28 del archivo Area\+De\+Espera.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_area_de_espera_8hh}{Area\+De\+Espera.\+hh}\item 
+\hyperlink{_area_de_espera_8cc}{Area\+De\+Espera.\+cc}\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+<map id="program.cc" name="program.cc">
+<area shape="rect" id="node2" href="$_terminal_de_contenedores_de_carga_8hh.html" title="Especificación de la clase Terminal. " alt="" coords="141,80,324,121"/>
+<area shape="rect" id="node3" href="$_area_de_almacenaje_8hh.html" title="Especificación de la clase Almacenaje. " alt="" coords="253,169,404,196"/>
+<area shape="rect" id="node11" href="$_area_de_espera_8hh.html" title="Especificación de la clase Espera. " alt="" coords="92,169,213,196"/>
+<area shape="rect" id="node4" href="$_contenedor_8hh.html" title="Especificació de la classe Contenedor. " alt="" coords="68,244,173,271"/>
+<area shape="rect" id="node6" href="$_segmento_8hh.html" title="Especificació de la classe Segmento. " alt="" coords="198,244,297,271"/>
+<area shape="rect" id="node7" href="$_ubicacion_8hh.html" title="Especificació de la classe Ubicacion. " alt="" coords="199,319,295,345"/>
+</map>

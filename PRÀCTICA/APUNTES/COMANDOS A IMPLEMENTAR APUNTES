@@ -1,0 +1,89 @@
+crea_terminal (N hileras, M plazas, H pisos):
+    se crea una terminal con las caracterisitcas de los parametros
+    area de almacenaje vacia
+    area de espera vacia    
+    se asumen parametros correctos
+
+
+inserta_contenedor (m matricula, l plazas): (se acepta tambien el comando i m l)      
+    implementar estrategia BEST_FIT
+    mensaje de error si ya existe un contenedor con la misma matricula
+    se imprime la ubciacion que ha ocupado el contenedor (area de almacenaje o area de espera)
+    
+    
+retira_contenedor (m matricula): (se acepta tambien el comando r m)
+    implementar estrategia BEST_FIT
+    mensaje de error si no existe el contenedor
+
+
+donde (m matricula):
+    se imprime la ubicacion del contenedor con matricula m con <j si esta en el area de almacenaje
+    (-1,0,0) si esta en el area de espera
+    (-1,-1,-1) si no esta en ningun sitio
+
+
+longitud (m matricula):
+    se imprime la longitud del contenedor con matricula m
+    mensaje de error si no existe 
+
+
+contenedor_ocupa (i, j, k):
+    se imprime la matricula del contenedor que ocupa la ubicacion (i,j,k)
+    no se imprime nada si no hay ningun contenedor ocupando esa ubicacion
+    error si la ubicacion esta fuera del area de almacenaje
+
+
+num_hileras():
+    se imprimen el numero de hileras
+
+
+num_plazas():
+    se imprimen el numero de plazas por hilera
+
+
+num_pisos():
+    se imprimen el numero de pisos por plaza
+
+
+area_espera():
+    se imprime matricula(longitud) por orden de salida (endl entre cada contenedor)
+
+
+contenedores():
+    se imprime matricula(<i,j,k>,longitud) por orden alfanumerico (endl entre cada contenedor)
+
+
+area_almacenaje():
+    se imprime todas las hileras de la terminal en forma bidimensional (matriz) y usando solo la primera
+    letra de cada matricula
+    la matriz es el dibujo de como estan colocados los contenedores
+    si hay mas de 9 plazas se utiliza solo el ultimo digito de cada una
+
+
+huecos():
+    se imprimen los huecos del area de almacenaje en formato (<i,j,k>,longitud)
+    en orden de longitud (en caso de empate por hilera (en caso de empate por plaza))
+
+
+fin():
+    termina el programa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    

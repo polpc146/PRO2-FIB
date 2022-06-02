@@ -1,0 +1,71 @@
+Especificación contenedor:
+
+-> Constructoras
+    sin matricula y longitud 0
+    con matricula m y longitud l
+    copia del contenedor c
+
+-> Consultoras
+    longitud del contenedor
+    matricula del contenedor
+
+-> I/O
+    salida de matricula y longitud
+
+-> Operadores
+    copia del contenedor c
+    comparador de == y !=
+    comparador lexicografico (longitud en caso de empate) <, <=, >, >=
+
+-> Private 
+    bool matricula valida
+    string mat
+    int lon
+
+
+Especificación ubicacion:
+
+-> Constructoras
+    ubicacion virtual (-1,-1,-1)
+    ubicacion valida, area de espera o virtual
+    copia de la ubicacion u
+
+-> Consultoras
+    hilera de la ubicacion (i)
+    plaza de la ubicacion (j)
+    piso de la ubicacion (k)
+
+-> I/O
+    salida de la ubicacion (i,j,k)
+
+-> Operadores
+    copia de la ubicacion u
+    comparador de == y !=
+    comparador de coordenadas i(j en caso de empate(k en caso de empate)) <, <=, >, >=
+
+-> Private
+    int x, y, z (coordenadas de la ubicacion)
+
+
+Especificacion segmento:
+
+-> Constructoras
+    ubicacion virtual (-1,-1,-1) y longitud 0
+    ubicacion u y longitud l
+    copia del segmento s
+
+-> Consultoras
+    ubicacion del segmento
+    longitud del segmento
+    
+-> I/O
+    salida de ubicacion y longitud del segmento
+
+-> Operadores
+    copia del segmento s
+    comparador de == y !=
+    comparador de longitud (ubicacion en caso de empate) <, <=, >, >=
+
+-> Private
+    ubicacion u
+    int l 
